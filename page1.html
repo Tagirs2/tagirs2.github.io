@@ -26,7 +26,9 @@ body{font-family: Roboto;}blockquote{border-color: #4ea2e3;}.display-1{font-fami
   <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
   
   
-</head>
+<meta name="theme-color" content="#4ea2e3">
+<link rel="manifest" href="manifest.json">
+<script async custom-element="amp-install-serviceworker" src="https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js"></script></head>
 <body><amp-sidebar id="sidebar" class="cid-rtYCPfqBnI" layout="nodisplay" side="right">
         <div class="builder-sidebar" id="builder-sidebar">
             <button on="tap:sidebar.close" class="close-sidebar">
@@ -301,5 +303,5 @@ body{font-family: Roboto;}blockquote{border-color: #4ea2e3;}.display-1{font-fami
 
   
   
-</body>
+<amp-install-serviceworker src="sw.js" layout="nodisplay"></amp-install-serviceworker></body>
 </html>
