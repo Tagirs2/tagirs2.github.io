@@ -39,7 +39,15 @@
     "siteFonts": [],
     "uniqCompNum": 33,
     "versionPublish": "4.10.5",
-    "screenshot": "screenshot.png"
+    "screenshot": "screenshot.png",
+    "PWA": {
+      "enabled": true
+    },
+    "cleanCSS": true,
+    "favicon": "",
+    "noImageResize": "",
+    "pwa-switcher": "on",
+    "сanonical-url": ""
   },
   "pages": {
     "page1.html": {
