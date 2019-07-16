@@ -32,6 +32,9 @@
     "path": "@PROJECT_PATH@",
     "versionFirst": "4.10.5",
     "siteFonts": [],
+    "PWA": {
+      "enabled": true
+    },
     "uniqCompNum": 28,
     "versionPublish": "4.10.5"
   },
