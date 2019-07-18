@@ -68,7 +68,10 @@
     "screenshot": "screenshot.png",
     "cleanCSS": true,
     "PWA": {
-      "enabled": true
+      "enabled": true,
+      "name": "autumn lee artistry",
+      "icon": "@PROJECT_PATH@/assets/images/autumnleelogo-512x512.png",
+      "themeColor": "#9b6e6c"
     },
     "robotsText": "User-agent: *\r\nDisallow: /cgi-bin\r\n",
     "robotsSwitcher": "on",
@@ -78,7 +81,7 @@
     "noImageResize": "",
     "pwa-switcher": "on",
     "google-analytics": "",
-    "сanonical-url": "<linkrel=\"canonical\"href=\"https://tagirs2github.io/url/to/full/document.html\">"
+    "сanonical-url": "http://<linkrel="
   },
   "pages": {
     "microbladinghome.html": {
