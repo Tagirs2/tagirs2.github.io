@@ -77,7 +77,7 @@
       "themeColor": "#9b6e6c"
     },
     "robotsText": "User-agent: *\r\nDisallow: /cgi-bin\r\n",
-    "robotsSwitcher": "",
+    "robotsSwitcher": "on",
     "siteUrl": "",
     "sitemapSwitcherAuto": "on",
     "favicon": "",
