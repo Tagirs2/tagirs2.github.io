@@ -98,6 +98,23 @@
       },
       "components": [
         {
+          "_customTemplate": true,
+          "_afterNavbarItem": false,
+          "_customHTML": "<div id=\"container_0_8006281180871156\"></div>[JS_CODE_0][JS_CODE_1]",
+          "_customCSS": "",
+          "alias": "code-editor",
+          "_tags": [
+            "Extension"
+          ],
+          "_name": "pro.custom-html",
+          "_anchor": "custom-html-y",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": [
+            "<script src=\"https://widget.botzzup.com/botzzup.js?r=0.9976253772751233\"></script>",
+            "<script>Botzzup.init('#container_0_8006281180871156', 'PnPZpoRPldveSDLDWadxgDagVjC9t1NLU7pQuksUnZ200ayguf0YPAauqETe');</script>"
+          ]
+        },
+        {
           "alias": false,
           "_styles": {
             "background-color": "@menuBgColor",
@@ -259,23 +276,6 @@
           "_global": false,
           "_once": false,
           "_params": {}
-        },
-        {
-          "_customTemplate": true,
-          "_afterNavbarItem": false,
-          "_customHTML": "<div id=\"container_0_8006281180871156\"></div>[JS_CODE_0][JS_CODE_1]",
-          "_customCSS": "",
-          "alias": "code-editor",
-          "_tags": [
-            "Extension"
-          ],
-          "_name": "pro.custom-html",
-          "_anchor": "custom-html-y",
-          "_PHPplaceholders": [],
-          "_JSplaceholders": [
-            "<script src=\"https://widget.botzzup.com/botzzup.js?r=0.9976253772751233\"></script>",
-            "<script>Botzzup.init('#container_0_8006281180871156', 'PnPZpoRPldveSDLDWadxgDagVjC9t1NLU7pQuksUnZ200ayguf0YPAauqETe');</script>"
-          ]
         },
         {
           "alias": false,
