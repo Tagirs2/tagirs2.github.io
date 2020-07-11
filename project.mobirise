@@ -93,8 +93,8 @@
         "title": "Microblading artist in Omaha",
         "meta_descr": "Autumn Lee, Microblading and permanent makeup artrist.",
         "header_custom": "",
-        "footer_custom": "<div id=\"container_0_8006281180871156\"></div><script src=\"https://widget.botzzup.com/botzzup.js?r=0.9976253772751233\"></script><script>Botzzup.init('#container_0_8006281180871156', 'PnPZpoRPldveSDLDWadxgDagVjC9t1NLU7pQuksUnZ200ayguf0YPAauqETe');</script>",
-        "html_before": ""
+        "footer_custom": "",
+        "html_before": "<div id=\"container_0_8006281180871156\"></div><script src=\"https://widget.botzzup.com/botzzup.js?r=0.9976253772751233\"></script><script>Botzzup.init('#container_0_8006281180871156', 'PnPZpoRPldveSDLDWadxgDagVjC9t1NLU7pQuksUnZ200ayguf0YPAauqETe');</script>"
       },
       "components": [
         {
