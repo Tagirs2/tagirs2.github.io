@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Site-08-06_2002",
-    "currentPage": "index.html",
+    "currentPage": "page1.html",
     "theme": {
       "name": "workshopamp",
       "title": "WorkshopAMP",
@@ -32,7 +32,7 @@
     "path": "@PROJECT_PATH@",
     "versionFirst": "4.10.5",
     "siteFonts": [],
-    "uniqCompNum": 8,
+    "uniqCompNum": 9,
     "versionPublish": "4.10.5"
   },
   "pages": {
@@ -520,6 +520,98 @@
           "_once": false,
           "_params": {},
           "_anchor": "header5-6"
+        }
+      ]
+    },
+    "page1.html": {
+      "settings": {
+        "title": "BotzzupReviews3steps",
+        "order": 1
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)",
+              ".mbr-overlay": {
+                "background-color": "@overlayColor",
+                "opacity": "@overlayOpacity"
+              }
+            },
+            ".card-wrapper": {
+              "& when not (@transparentBg)": {
+                "position": "relative"
+              },
+              "& when (@showBorders)": {
+                "border": "1px solid @bordersColor"
+              },
+              "z-index": "1",
+              "@media (max-width: 991px)": {
+                "flex-wrap": "wrap"
+              }
+            },
+            "& when not (@transparentBg)": {
+              ".card-wrapper:after": {
+                "content": "\"\"",
+                "position": "absolute",
+                "left": "0",
+                "right": "0",
+                "top": "0",
+                "bottom": "0",
+                "background-color": "@cardBg",
+                "opacity": "@bgOpacity",
+                "z-index": "-1"
+              }
+            },
+            ".card-box": {
+              "width": "100%"
+            },
+            ".link-ws-black a": {
+              "&:hover, &:focus": {
+                "border-color": "contrast(@cardBg)"
+              }
+            },
+            "& when (@checkIcons)": {
+              ".iconfont-wrapper": {
+                "height": "(@iconsSize * 1rem)",
+                "width": "(@iconsSize * 1rem)",
+                "display": "inline-block",
+                ".amp-iconfont": {
+                  "color": "@primaryColor",
+                  "transition": "color 0.2s",
+                  "vertical-align": "bottom",
+                  "@media (min-width: 768px)": {
+                    "font-size": "~\"@{iconsSize}rem\"",
+                    "width": "~\"@{iconsSize}rem\""
+                  },
+                  "@media (max-width: 767px)": {
+                    "font-size": "2.5rem",
+                    "width": "2.5rem"
+                  }
+                }
+              }
+            },
+            ".card-subtitle": {
+              "color": "#000000"
+            },
+            ".card-text": {
+              "color": "#000000"
+            }
+          },
+          "_name": "features2",
+          "_customHTML": "<section class=\"features2\" group=\"Features\" plugins=\"amp-main\">\n    <mbr-parameters>\n    <header>Size</header>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n    <header>Title</header>\n    <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n    <select title=\"Align\" name=\"titleAlign\" condition=\"showTitle || showSubtitle\">\n        <option value=\"1\" selected>Left</option>\n        <option value=\"2\">Center</option>\n        <option value=\"3\">Right</option>\n    </select>\n    <header>Cards</header>\n    <input type=\"range\" inline title=\"Cards Count\" name=\"cardsCount\" min=\"1\" max=\"4\" step=\"1\" value=\"3\" condition=\"showCardsTitle || showCardsSubtitle || showCardsText || showLinks || checkIcons\" required>\n    <select title=\"Align\" name=\"cardsAlign\" condition=\"showCardsTitle || showCardsSubtitle || showCardsText || showLinks || checkIcons\">\n        <option value=\"1\">Left</option>\n        <option value=\"2\" selected>Center</option>\n        <option value=\"3\">Right</option>\n    </select>\n    <!-- -->   \n    <input type=\"checkbox\" title=\"Show Title\" name=\"showCardsTitle\">\n    <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showCardsSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Show Text\" name=\"showCardsText\" checked>\n    <input type=\"checkbox\" title=\"Show Links\" name=\"showLinks\" checked>\n    <input type=\"checkbox\" title=\"Shadow\" name=\"showShadow\" condition=\"showCardsTitle || showCardsSubtitle || showCardsText || showLinks || checkIcons\" checked>\n    <input type=\"checkbox\" title=\"Borders\" name=\"showBorders\" condition=\"showCardsTitle || showCardsSubtitle || showCardsText || showLinks || checkIcons\">\n    <input type=\"color\" title=\"Color\" name=\"bordersColor\" value=\"#cccccc\" condition=\"showBorders && (showCardsTitle || showCardsSubtitle || showCardsText || showLinks || checkIcons)\">\n    <input type=\"checkbox\" title=\"Transparent BG\" name=\"transparentBg\" condition=\"showCardsTitle || showCardsSubtitle || showCardsText || showLinks || checkIcons\">\n    <input type=\"range\" title=\"Opacity\" name=\"bgOpacity\" min=\"0\" max=\"1\" value=\"1\" step=\"0.1\" condition=\"!transparentBg\">\n\n    <input type=\"color\" title=\"Color\" name=\"cardBg\" value=\"#ffffff\" condition=\"!transparentBg && (showCardsTitle || showCardsSubtitle || showCardsText || showLinks || checkIcons)\">\n    <!--  -->\n    <input type=\"checkbox\" title=\"Icons\" name=\"checkIcons\" checked>    \n    <input type=\"range\" inline title=\"Icons Size\" name=\"iconsSize\" min=\"1\" max=\"8\" step=\"0.5\" value=\"6\" condition=\"checkIcons\">\n    <!--  -->\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" required>\n        <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n        <input type=\"image\" title=\"Background Image\" value=\"../_images/background3.jpg\">\n    </fieldset>\n    <!--  -->\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type == 'image'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.9\" condition=\"overlay && bg.type == 'image'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\"></div>\n    <div mbr-class=\"{'container':!fullWidth,\n                     'container-fluid':fullWidth}\">\n        <div class=\"title mbr-pb-5\" mbr-if=\"showTitle || showSubtitle\" mbr-class=\"{'align-center': titleAlign == 2,\n                         'align-right': titleAlign == 3}\">\n                <h4 class=\"mbr-section-subtitle mbr-bold mbr-pb-1 text-primary mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">Smart reviw generation that works by itself - so you don't have to</h4>         \n                <h3 class=\"mbr-section-title mbr-bolder mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">How it works</h3>                \n        </div>\n        <div class=\"mbr-row\" mbr-if=\"showCardsTitle || showCardsSubtitle || showCardsText || showLinks || checkIcons\">\n            <div class=\"card mbr-col-sm-12 mbr-col-md-6\" mbr-class=\"{'mbr-col-lg-4': cardsCount <= 3,\n                             'mbr-col-lg-3': cardsCount == 4,\n                             'align-center': cardsAlign == 2,\n                             'align-right': cardsAlign == 3,\n                             'md-pb': cardsCount >= 2,\n                             'last-child': cardsCount == 1}\">\n                <div class=\"card-wrapper mbr-flex\" mbr-class=\"{'mbr-column': checkIcons, \n                                 'mbr-pt-3 mbr-pb-3 mbr-px-4': showBorders || !transparentBg,\n                                 'raised': showShadow}\">\n                    <div class=\"card-img mbr-pb-3 mbr-pt-2\" mbr-if=\"checkIcons\" mbr-class=\"{'align-center': cardsAlign == 2,\n                                     'align-right': cardsAlign == 3}\">\n                        <div class=\"iconfont-wrapper\">\n                            <span mbr-icon class=\"amp-iconfont fa-gears fa\"></span>\n                        </div>\n                    </div>\n                    <div class=\"card-box\" mbr-if=\"(showCardsTitle || showCardsSubtitle || showCardsText || showLinks)\">\n                        <h3 class=\"card-title mbr-bolder mbr-fonts-style mbr-white\" mbr-theme-style=\"display-5\" mbr-if=\"showCardsTitle\" data-app-selector=\".card-title\">Card #1</h3>\n                        <h4 class=\"card-subtitle mbr-pt-3 mbr-fonts-style mbr-bolder mbr-white\" mbr-theme-style=\"display-5\" mbr-if=\"showCardsSubtitle\" data-app-selector=\".card-subtitle\">1. Our AI learns about your reviews status</h4>\n                        <p class=\"card-text mbr-fonts-style mbr-pt-2 mbr-white mbr-light\" mbr-theme-style=\"display-7\" mbr-if=\"showCardsText\" data-app-selector=\".card-text\">Type in your business name and botzzup will crawl your business reviews and create a bot for you</p>\n                        <p class=\"link-ws-black link-primary mbr-regular\" mbr-class=\"{'mbr-py-2':showSubtitle||showCardTitle||showText}\" mbr-if=\"showLinks\" mbr-theme-style=\"display-7\" data-app-selector=\".link-ws-black a\">\n                        <a href=\"#\">Learn more</a>\n                    </p>\n                    </div>\n                </div>\n            </div>\n            <div class=\"card mbr-col-sm-12 mbr-col-md-6\" mbr-class=\"{'mbr-col-lg-4': cardsCount <= 3,\n                             'mbr-col-lg-3': cardsCount == 4,\n                             'align-center': cardsAlign == 2,\n                             'align-right': cardsAlign == 3,\n                             'md-pb': cardsCount >= 2,\n                             'last-child': cardsCount == 2}\" mbr-if=\"cardsCount > 1\">\n                <div class=\"card-wrapper mbr-flex\" mbr-class=\"{'mbr-column': checkIcons,\n                                 'mbr-pt-3 mbr-pb-3 mbr-px-4': showBorders || !transparentBg,\n                                 'raised': showShadow}\">\n                    <div class=\"card-img mbr-pb-3 mbr-pt-2\" mbr-if=\"checkIcons\" mbr-class=\"{'align-center': cardsAlign == 2,\n                                     'align-right': cardsAlign == 3}\">\n                        <div class=\"iconfont-wrapper\">\n                            <span mbr-icon class=\"amp-iconfont fa-sitemap fa\"></span>\n                        </div>\n                    </div>\n                    <div class=\"card-box\" mbr-if=\"(showCardsTitle || showCardsSubtitle || showCardsText || showLinks)\">\n                        <h3 class=\"card-title mbr-bolder mbr-fonts-style mbr-white\" mbr-theme-style=\"display-5\" mbr-if=\"showCardsTitle\" data-app-selector=\".card-title\">Card #2</h3>\n                        <h4 class=\"card-subtitle mbr-pt-3 mbr-fonts-style mbr-bolder mbr-white\" mbr-theme-style=\"display-5\" mbr-if=\"showCardsSubtitle\" data-app-selector=\".card-subtitle\">2. &nbsp;Personalize the review request bot</h4>\n                        <p class=\"card-text mbr-fonts-style mbr-pt-2 mbr-white mbr-light\" mbr-theme-style=\"display-7\" mbr-if=\"showCardsText\" data-app-selector=\".card-text\"><br>We will create amazing interactive funny bot that talks to your clients and gently asks them for reviews.</p>\n                        <p class=\"link-ws-black link-primary mbr-regular\" mbr-class=\"{'mbr-py-2':showSubtitle||showCardTitle||showText}\" mbr-if=\"showLinks\" mbr-theme-style=\"display-7\" data-app-selector=\".link-ws-black a\">\n                        <a href=\"#\">Learn more</a>\n                    </p>\n                    </div>\n                </div>\n            </div>\n            <div class=\"card mbr-col-sm-12 mbr-col-md-6\" mbr-class=\"{'mbr-col-lg-4': cardsCount <= 3,\n                             'mbr-col-lg-3': cardsCount == 4,\n                             'align-center': cardsAlign == 2,\n                             'align-right': cardsAlign == 3,\n                             'last-child': cardsCount == 3}\" mbr-if=\"cardsCount > 2\">\n                <div class=\"card-wrapper mbr-flex\" mbr-class=\"{'mbr-column': checkIcons,\n                                 'mbr-pt-3 mbr-pb-3 mbr-px-4': showBorders || !transparentBg,\n                                 'raised': showShadow}\">\n                    <div class=\"card-img mbr-pb-3 mbr-pt-2\" mbr-if=\"checkIcons\" mbr-class=\"{'align-center': cardsAlign == 2,\n                                     'align-right': cardsAlign == 3}\">\n                        <div class=\"iconfont-wrapper\">\n                            <span mbr-icon class=\"amp-iconfont fa-mail-forward fa\"></span>\n                        </div>\n                    </div>\n                    <div class=\"card-box\" mbr-if=\"(showCardsTitle || showCardsSubtitle || showCardsText || showLinks)\">\n                        <h3 class=\"card-title mbr-bolder mbr-fonts-style mbr-white\" mbr-theme-style=\"display-5\" mbr-if=\"showCardsTitle\" data-app-selector=\".card-title\">Card #3</h3>\n                        <h4 class=\"card-subtitle mbr-pt-3 mbr-fonts-style mbr-bolder mbr-white\" mbr-theme-style=\"display-5\" mbr-if=\"showCardsSubtitle\" data-app-selector=\".card-subtitle\">3. Launch. Your clients will love it!</h4>\n                        <p class=\"card-text mbr-fonts-style mbr-pt-2 mbr-white mbr-light\" mbr-theme-style=\"display-7\" mbr-if=\"showCardsText\" data-app-selector=\".card-text\"><br>The bot will reach 5-7 of your customers and help with leading them to your review page on Google</p>\n                        <p class=\"link-ws-black link-primary mbr-regular\" mbr-class=\"{'mbr-py-2':showSubtitle||showCardTitle||showText}\" mbr-if=\"showLinks\" mbr-theme-style=\"display-7\" data-app-selector=\".link-ws-black a\">\n                        <a href=\"#\">Learn more</a>\n                    </p>\n                    </div>\n                </div>\n            </div>\n            <div class=\"card mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-3\" mbr-class=\"{'align-center': cardsAlign == 2,\n                             'align-right': cardsAlign == 3,\n                             'last-child': cardsCount == 4}\" mbr-if=\"cardsCount > 3\">\n                <div class=\"card-wrapper mbr-flex\" mbr-class=\"{'mbr-column': checkIcons, \n                                 'mbr-pt-3 mbr-pb-3 mbr-px-4': showBorders || !transparentBg,\n                                 'raised': showShadow}\">\n                    <div class=\"card-img mbr-pb-3 mbr-pt-2\" mbr-if=\"checkIcons\" mbr-class=\"{'align-center': cardsAlign == 2,\n                                     'align-right': cardsAlign == 3}\">\n                        <div class=\"iconfont-wrapper\">\n                            <span mbr-icon class=\"amp-iconfont mbri-hot-cup\"></span>\n                        </div>\n                    </div>\n                    <div class=\"card-box\" mbr-if=\"(showCardsTitle || showCardsSubtitle || showCardsText || showLinks)\">\n                        <h3 class=\"card-title mbr-bolder mbr-fonts-style mbr-white\" mbr-theme-style=\"display-5\" mbr-if=\"showCardsTitle\" data-app-selector=\".card-title\">Card #4</h3>\n                        <h4 class=\"card-subtitle mbr-pt-3 mbr-fonts-style mbr-bolder mbr-white\" mbr-theme-style=\"display-7\" mbr-if=\"showCardsSubtitle\" data-app-selector=\".card-subtitle\">Coffee Maker</h4>\n                        <p class=\"card-text mbr-fonts-style mbr-pt-2 mbr-white mbr-light\" mbr-theme-style=\"display-7\" mbr-if=\"showCardsText\" data-app-selector=\".card-text\">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>\n                        <p class=\"link-ws-black link-primary mbr-regular\" mbr-class=\"{'mbr-py-2':showSubtitle||showCardTitle||showText}\" mbr-if=\"showLinks\" mbr-theme-style=\"display-7\" data-app-selector=\".link-ws-black a\">\n                        <a href=\"#\">Learn more</a>\n                    </p>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "s6Wfi5ljrM",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "features2-8"
         }
       ]
     }
