@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Site-08-12_0949",
-    "currentPage": "page4.html",
+    "currentPage": "page5.html",
     "theme": {
       "name": "insightamp",
       "title": "InsightAMP",
@@ -31,7 +31,7 @@
     "path": "@PROJECT_PATH@",
     "versionFirst": "4.10.5",
     "siteFonts": [],
-    "uniqCompNum": 28,
+    "uniqCompNum": 30,
     "versionPublish": "4.10.5",
     "screenshot": "screenshot.png"
   },
@@ -159,7 +159,7 @@
             }
           },
           "_name": "menu1",
-          "_customHTML": "<section class=\"menu1 menu horizontal-menu\" group=\"Menu\" plugins=\"DropDown, amp-main, amp-sidebar\" always-top global once=\"menu\">\n\t<mbr-parameters>\n\t\t<!-- Block parameters controls (Blue \"Gear\" panel) -->\n\t\t<!--  -->\n\t\t<header>Size</header>\n\t\t<input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n\t\t<input type=\"checkbox\" title=\"Sticky Position\" name=\"sticky\" checked>\n\t\t<!--  -->\n\t\t<header>Show/Hide</header>\n\t\t<input type=\"checkbox\" title=\"Logo\" name=\"showLogo\" checked>\n\t\t<input type=\"range\" title=\"Size\" name=\"logoSize\" min=\"30\" max=\"120\" value=\"30\" step=\"10\" condition=\"showLogo\">\n\t\t<input type=\"checkbox\" title=\"Brand Name\" name=\"showBrand\" checked>\n\t\t<input type=\"checkbox\" title=\"Menu Items\" name=\"showItems\" checked>\n\t\t<input type=\"checkbox\" title=\"Button(s)\" name=\"showButtons\">\n\t\t<input type=\"checkbox\" title=\"Social\" name=\"showSocial\" checked>\n\t\t<input type=\"range\" inline title=\"Icons Count\" name=\"socialCount\" min=\"1\" max=\"6\" value=\"2\" step=\"1\" condition=\"showSocial\">\n\t\t<header>Sidebar</header>\n\t\t<select title=\"Side\" name=\"sidebarSide\">\n\t\t\t<option value=\"left\">Left</option>\n\t\t\t<option value=\"right\" selected>Right</option>\n\t\t</select>\n\t\t<input type=\"color\" title=\"Hamburger Color\" name=\"hamburgerColor\" value=\"#232323\">\n\t\t<header>Background</header>\n\t\t<input type=\"color\" title=\"Background Color\" name=\"menuBgColor\" value=\"#ffffff\" required>\n\t\t<!-- End block parameters -->\n\t</mbr-parameters>\n\t<!-- <div class=\"menu-wrapper\"> -->\n\t<nav class=\"navbar navbar-dropdown navbar-expand-lg\" mbr-class=\"{'navbar-fixed-top': sticky}\">\n\t\t<div class=\"menu-container\" mbr-class=\"{'container': !fullWidth,\n\t\t\t\t\t\t'container-fluid': fullWidth,\n\t\t\t\t\t\t'mbr-jc-e': !showLogo && !showBrand}\">\n\t\t\t<!-- SHOW LOGO -->\n\t\t\t<div class=\"navbar-brand\" mbr-if=\"showLogo || showBrand\">\n\t\t\t\t<div mbr-if=\"showLogo\" class=\"navbar-logo\">\n\t\t\t\t\t<amp-img src=\"@PROJECT_PATH@/assets/images/mbapplogo-228x216.png\" layout=\"responsive\" height=\"50\" width=\"52.77777777777778\" alt=\"image\" class=\"placeholder-loader\">\n\t\t\t\t\t\t<div placeholder class=\"placeholder\"></div>\n\t\t\t\t\t\t<img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/mbapplogo-228x216.png\" alt title>\n\t\t\t\t\t</amp-img>\n\t\t\t\t</div>\n\t\t\t\t<span mbr-if=\"showBrand\" mbr-buttons mbr-theme-style=\"display-5\" class=\"navbar-caption-wrap\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove\"><a class=\"navbar-caption mbr-semibold text-black\" data-app-selector=\".navbar-caption\" href=\"index.html\" data-app-placeholder=\"Type Text\">Microblading App Help</a></span>\n\t\t\t</div>\n\t\t\t<!-- SHOW LOGO END -->\n\t\t\t<!-- COLLAPSED MENU -->\n\t\t\t<div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\n\t\t\t\t<button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarNavAltMarkup\" aria-expanded=\"false\" aria-label=\"Toggle navigation\" mbr-if=\"showItems || showSocial || showButtons\">\n\t\t\t\t\t<div class=\"hamburger\">\n\t\t\t\t\t\t<span></span>\n\t\t\t\t\t\t<span></span>\n\t\t\t\t\t\t<span></span>\n\t\t\t\t\t\t<span></span>\n\t\t\t\t\t</div>\n\t\t\t\t</button>\n\t\t\t\t<!-- NAVBAR ITEMS -->\n\t\t\t\t<ul mbr-menu class=\"navbar-nav nav-dropdown\" mbr-theme-style=\"display-7\" mbr-if=\"showItems\" mbr-class=\"{'nav-right': !showButtons,'navbar-nav-top-padding': isPublish && !showBrand && !showLogo}\"><li class=\"nav-item dropdown\">\n\t\t\t\t\t\t<a class=\"nav-link mbr-semibold link text-black dropdown-toggle\" href=\"https://mobirise.com\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" data-toggle=\"dropdown-submenu\" aria-expanded=\"false\">How to</a><div class=\"dropdown-menu\"><a class=\"mbr-semibold text-black dropdown-item\" href=\"page1.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">&nbsp; Use the app (Part I)<br></a><a class=\"mbr-semibold text-black dropdown-item\" href=\"page2.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">Use the app (Part II)</a><a class=\"mbr-semibold text-black dropdown-item\" href=\"page3.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">Create custom forms</a></div>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link mbr-semibold link text-black\" href=\"page4.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">Blog/Articles</a></li>\n\t\t\t\t\t\n\t\t\t\t\t\n\n\n\t\t\t\t\t\n\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link mbr-semibold link text-black\" href=\"https://mobirise.com\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">Contact US</a></li></ul>\n\t\t\t\t<!-- NAVBAR ITEMS END -->\n\t\t\t\t<!-- SOCIAL ICON -->\n\t\t\t\t<div class=\"menu-social-list\" mbr-if=\"showSocial\" mbr-list mbr-list-grow=\"socialCount\" mbr-link-type=\"socials\">\n\t\t\t\t\t<a href=\"https://twitter.com/8bsite\" target=\"_blank\" class=\"iconfont-wrapper\">\n\t\t\t\t\t\t<span mbr-icon class=\"amp-iconfont animation-normal fa-pinterest-p fa\"></span>\n\t\t\t\t\t</a>\n\t\t\t\t\t<a href=\"https://www.facebook.com/8bsite/\" target=\"_blank\" class=\"iconfont-wrapper\">\n\t\t\t\t\t\t<span mbr-icon class=\"amp-iconfont animation-normal fa-facebook-official fa\"></span>\n\t\t\t\t\t</a>\n\n\n\n\t\t\t\t</div>\n\t\t\t\t<!-- SOCIAL ICON END -->\n\t\t\t\t<!-- SHOW BUTTON -->\n\t\t\t\t<div mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-7\" class=\"navbar-buttons mbr-section-btn\"><a class=\"btn btn-md btn-black mbr-semibold\" href=\"https://mobirise.com\" data-app-placeholder=\"Type Text\">Shop\n\t\t\t\t\t\tNow</a></div>\n\t\t\t\t<!-- SHOW BUTTON END -->\n\t\t\t</div>\n\t\t\t<!-- COLLAPSED MENU END -->\n\t\t\t<button class=\"navbar-toggler hide\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarNavAltMarkup\" aria-expanded=\"false\" aria-label=\"Toggle navigation\" mbr-if=\"showItems || showSocial || showButtons\">\n\t\t\t\t<div class=\"hamburger\">\n\t\t\t\t\t<span></span>\n\t\t\t\t\t<span></span>\n\t\t\t\t\t<span></span>\n\t\t\t\t\t<span></span>\n\t\t\t\t</div>\n\t\t\t</button>\n\t\t\t<button on=\"tap:sidebar.toggle\" class=\"ampstart-btn hamburger\" mbr-if=\"(showItems||showButtons)\">\n\t\t\t\t<span></span>\n\t\t\t\t<span></span>\n\t\t\t\t<span></span>\n\t\t\t\t<span></span>\n\t\t\t</button>\n\t\t</div>\n\t</nav>\n\t<!-- AMP plug -->\n\t<amp-sidebar id=\"sidebar\" layout=\"nodisplay\" side=\"{{sidebarSide}}\">\n\t\t<div class=\"builder-sidebar\" id=\"builder-sidebar\">\n\t\t\t<button on=\"tap:sidebar.close\" class=\"close-sidebar\">\n\t\t\t\t<span></span>\n\t\t\t\t<span></span>\n\t\t\t</button>\n\t\t</div>\n\t</amp-sidebar>\n\t<!-- </div> -->\n</section>",
+          "_customHTML": "<section class=\"menu1 menu horizontal-menu\" group=\"Menu\" plugins=\"DropDown, amp-main, amp-sidebar\" always-top global once=\"menu\">\n\t<mbr-parameters>\n\t\t<!-- Block parameters controls (Blue \"Gear\" panel) -->\n\t\t<!--  -->\n\t\t<header>Size</header>\n\t\t<input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n\t\t<input type=\"checkbox\" title=\"Sticky Position\" name=\"sticky\" checked>\n\t\t<!--  -->\n\t\t<header>Show/Hide</header>\n\t\t<input type=\"checkbox\" title=\"Logo\" name=\"showLogo\" checked>\n\t\t<input type=\"range\" title=\"Size\" name=\"logoSize\" min=\"30\" max=\"120\" value=\"30\" step=\"10\" condition=\"showLogo\">\n\t\t<input type=\"checkbox\" title=\"Brand Name\" name=\"showBrand\" checked>\n\t\t<input type=\"checkbox\" title=\"Menu Items\" name=\"showItems\" checked>\n\t\t<input type=\"checkbox\" title=\"Button(s)\" name=\"showButtons\">\n\t\t<input type=\"checkbox\" title=\"Social\" name=\"showSocial\" checked>\n\t\t<input type=\"range\" inline title=\"Icons Count\" name=\"socialCount\" min=\"1\" max=\"6\" value=\"2\" step=\"1\" condition=\"showSocial\">\n\t\t<header>Sidebar</header>\n\t\t<select title=\"Side\" name=\"sidebarSide\">\n\t\t\t<option value=\"left\">Left</option>\n\t\t\t<option value=\"right\" selected>Right</option>\n\t\t</select>\n\t\t<input type=\"color\" title=\"Hamburger Color\" name=\"hamburgerColor\" value=\"#232323\">\n\t\t<header>Background</header>\n\t\t<input type=\"color\" title=\"Background Color\" name=\"menuBgColor\" value=\"#ffffff\" required>\n\t\t<!-- End block parameters -->\n\t</mbr-parameters>\n\t<!-- <div class=\"menu-wrapper\"> -->\n\t<nav class=\"navbar navbar-dropdown navbar-expand-lg\" mbr-class=\"{'navbar-fixed-top': sticky}\">\n\t\t<div class=\"menu-container\" mbr-class=\"{'container': !fullWidth,\n\t\t\t\t\t\t'container-fluid': fullWidth,\n\t\t\t\t\t\t'mbr-jc-e': !showLogo && !showBrand}\">\n\t\t\t<!-- SHOW LOGO -->\n\t\t\t<div class=\"navbar-brand\" mbr-if=\"showLogo || showBrand\">\n\t\t\t\t<div mbr-if=\"showLogo\" class=\"navbar-logo\">\n\t\t\t\t\t<amp-img src=\"@PROJECT_PATH@/assets/images/mbapplogo-228x216.png\" layout=\"responsive\" height=\"28\" width=\"29.555555555555557\" alt=\"image\" class=\"placeholder-loader\">\n\t\t\t\t\t\t<div placeholder class=\"placeholder\"></div>\n\t\t\t\t\t\t<img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/mbapplogo-228x216.png\" alt title>\n\t\t\t\t\t</amp-img>\n\t\t\t\t</div>\n\t\t\t\t<span mbr-if=\"showBrand\" mbr-buttons mbr-theme-style=\"display-5\" class=\"navbar-caption-wrap\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove\"><a class=\"navbar-caption mbr-semibold text-black\" data-app-selector=\".navbar-caption\" href=\"index.html\" data-app-placeholder=\"Type Text\">Microblading App Help</a></span>\n\t\t\t</div>\n\t\t\t<!-- SHOW LOGO END -->\n\t\t\t<!-- COLLAPSED MENU -->\n\t\t\t<div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\n\t\t\t\t<button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarNavAltMarkup\" aria-expanded=\"false\" aria-label=\"Toggle navigation\" mbr-if=\"showItems || showSocial || showButtons\">\n\t\t\t\t\t<div class=\"hamburger\">\n\t\t\t\t\t\t<span></span>\n\t\t\t\t\t\t<span></span>\n\t\t\t\t\t\t<span></span>\n\t\t\t\t\t\t<span></span>\n\t\t\t\t\t</div>\n\t\t\t\t</button>\n\t\t\t\t<!-- NAVBAR ITEMS -->\n\t\t\t\t<ul mbr-menu class=\"navbar-nav nav-dropdown\" mbr-theme-style=\"display-7\" mbr-if=\"showItems\" mbr-class=\"{'nav-right': !showButtons,'navbar-nav-top-padding': isPublish && !showBrand && !showLogo}\"><li class=\"nav-item dropdown\">\n\t\t\t\t\t\t<a class=\"nav-link mbr-semibold link text-black dropdown-toggle\" href=\"https://mobirise.com\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" data-toggle=\"dropdown-submenu\" aria-expanded=\"false\">How to</a><div class=\"dropdown-menu\"><a class=\"mbr-semibold text-black dropdown-item\" href=\"page1.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">&nbsp; Use the app (Part I)<br></a><a class=\"mbr-semibold text-black dropdown-item\" href=\"page2.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">Use the app (Part II)</a><a class=\"mbr-semibold text-black dropdown-item\" href=\"page3.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">Create custom forms</a></div>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link mbr-semibold link text-black\" href=\"page4.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">Blog/Articles</a></li>\n\t\t\t\t\t\n\t\t\t\t\t\n\n\n\t\t\t\t\t\n\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link mbr-semibold link text-black\" href=\"page5.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">Contact Us</a></li></ul>\n\t\t\t\t<!-- NAVBAR ITEMS END -->\n\t\t\t\t<!-- SOCIAL ICON -->\n\t\t\t\t<div class=\"menu-social-list\" mbr-if=\"showSocial\" mbr-list mbr-list-grow=\"socialCount\" mbr-link-type=\"socials\">\n\t\t\t\t\t<a href=\"https://twitter.com/8bsite\" target=\"_blank\" class=\"iconfont-wrapper\">\n\t\t\t\t\t\t<span mbr-icon class=\"amp-iconfont animation-normal fa-pinterest-p fa\"></span>\n\t\t\t\t\t</a>\n\t\t\t\t\t<a href=\"https://www.facebook.com/8bsite/\" target=\"_blank\" class=\"iconfont-wrapper\">\n\t\t\t\t\t\t<span mbr-icon class=\"amp-iconfont animation-normal fa-facebook-official fa\"></span>\n\t\t\t\t\t</a>\n\n\n\n\t\t\t\t</div>\n\t\t\t\t<!-- SOCIAL ICON END -->\n\t\t\t\t<!-- SHOW BUTTON -->\n\t\t\t\t<div mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-7\" class=\"navbar-buttons mbr-section-btn\"><a class=\"btn btn-md btn-black mbr-semibold\" href=\"https://mobirise.com\" data-app-placeholder=\"Type Text\">Shop\n\t\t\t\t\t\tNow</a></div>\n\t\t\t\t<!-- SHOW BUTTON END -->\n\t\t\t</div>\n\t\t\t<!-- COLLAPSED MENU END -->\n\t\t\t<button class=\"navbar-toggler hide\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarNavAltMarkup\" aria-expanded=\"false\" aria-label=\"Toggle navigation\" mbr-if=\"showItems || showSocial || showButtons\">\n\t\t\t\t<div class=\"hamburger\">\n\t\t\t\t\t<span></span>\n\t\t\t\t\t<span></span>\n\t\t\t\t\t<span></span>\n\t\t\t\t\t<span></span>\n\t\t\t\t</div>\n\t\t\t</button>\n\t\t\t<button on=\"tap:sidebar.toggle\" class=\"ampstart-btn hamburger\" mbr-if=\"(showItems||showButtons)\">\n\t\t\t\t<span></span>\n\t\t\t\t<span></span>\n\t\t\t\t<span></span>\n\t\t\t\t<span></span>\n\t\t\t</button>\n\t\t</div>\n\t</nav>\n\t<!-- AMP plug -->\n\t<amp-sidebar id=\"sidebar\" layout=\"nodisplay\" side=\"{{sidebarSide}}\">\n\t\t<div class=\"builder-sidebar\" id=\"builder-sidebar\">\n\t\t\t<button on=\"tap:sidebar.close\" class=\"close-sidebar\">\n\t\t\t\t<span></span>\n\t\t\t\t<span></span>\n\t\t\t</button>\n\t\t</div>\n\t</amp-sidebar>\n\t<!-- </div> -->\n</section>",
           "_cid": "s7stAkintS",
           "_anchor": "menu1-1",
           "_protectedParams": [],
@@ -291,7 +291,7 @@
     "page1.html": {
       "settings": {
         "title": "How to use the app (Part I)",
-        "order": 4
+        "order": 5
       },
       "components": [
         {
@@ -687,7 +687,7 @@
     "page2.html": {
       "settings": {
         "title": "How to use the app (part II)",
-        "order": 3
+        "order": 4
       },
       "components": [
         {
@@ -990,7 +990,7 @@
     "page3.html": {
       "settings": {
         "title": "How to create custom forms",
-        "order": 2
+        "order": 3
       },
       "components": [
         {
@@ -1106,7 +1106,7 @@
             }
           },
           "_name": "menu1",
-          "_customHTML": "<section class=\"menu1 menu horizontal-menu\" group=\"Menu\" plugins=\"DropDown, amp-main, amp-sidebar\" always-top global once=\"menu\">\n\t<mbr-parameters>\n\t\t<!-- Block parameters controls (Blue \"Gear\" panel) -->\n\t\t<!--  -->\n\t\t<header>Size</header>\n\t\t<input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n\t\t<input type=\"checkbox\" title=\"Sticky Position\" name=\"sticky\" checked>\n\t\t<!--  -->\n\t\t<header>Show/Hide</header>\n\t\t<input type=\"checkbox\" title=\"Logo\" name=\"showLogo\" checked>\n\t\t<input type=\"range\" title=\"Size\" name=\"logoSize\" min=\"30\" max=\"120\" value=\"30\" step=\"10\" condition=\"showLogo\">\n\t\t<input type=\"checkbox\" title=\"Brand Name\" name=\"showBrand\" checked>\n\t\t<input type=\"checkbox\" title=\"Menu Items\" name=\"showItems\" checked>\n\t\t<input type=\"checkbox\" title=\"Button(s)\" name=\"showButtons\">\n\t\t<input type=\"checkbox\" title=\"Social\" name=\"showSocial\" checked>\n\t\t<input type=\"range\" inline title=\"Icons Count\" name=\"socialCount\" min=\"1\" max=\"6\" value=\"2\" step=\"1\" condition=\"showSocial\">\n\t\t<header>Sidebar</header>\n\t\t<select title=\"Side\" name=\"sidebarSide\">\n\t\t\t<option value=\"left\">Left</option>\n\t\t\t<option value=\"right\" selected>Right</option>\n\t\t</select>\n\t\t<input type=\"color\" title=\"Hamburger Color\" name=\"hamburgerColor\" value=\"#232323\">\n\t\t<header>Background</header>\n\t\t<input type=\"color\" title=\"Background Color\" name=\"menuBgColor\" value=\"#ffffff\" required>\n\t\t<!-- End block parameters -->\n\t</mbr-parameters>\n\t<!-- <div class=\"menu-wrapper\"> -->\n\t<nav class=\"navbar navbar-dropdown navbar-expand-lg\" mbr-class=\"{'navbar-fixed-top': sticky}\">\n\t\t<div class=\"menu-container\" mbr-class=\"{'container': !fullWidth,\n\t\t\t\t\t\t'container-fluid': fullWidth,\n\t\t\t\t\t\t'mbr-jc-e': !showLogo && !showBrand}\">\n\t\t\t<!-- SHOW LOGO -->\n\t\t\t<div class=\"navbar-brand\" mbr-if=\"showLogo || showBrand\">\n\t\t\t\t<div mbr-if=\"showLogo\" class=\"navbar-logo\">\n\t\t\t\t\t<amp-img src=\"@PROJECT_PATH@/assets/images/mbapplogo-228x216.png\" layout=\"responsive\" height=\"50\" width=\"52.77777777777778\" alt=\"image\" class=\"placeholder-loader\">\n\t\t\t\t\t\t<div placeholder class=\"placeholder\"></div>\n\t\t\t\t\t\t<img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/mbapplogo-228x216.png\" alt title>\n\t\t\t\t\t</amp-img>\n\t\t\t\t</div>\n\t\t\t\t<span mbr-if=\"showBrand\" mbr-buttons mbr-theme-style=\"display-5\" class=\"navbar-caption-wrap\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove\"><a class=\"navbar-caption mbr-semibold text-black\" data-app-selector=\".navbar-caption\" href=\"index.html\" data-app-placeholder=\"Type Text\">Microblading App Help</a></span>\n\t\t\t</div>\n\t\t\t<!-- SHOW LOGO END -->\n\t\t\t<!-- COLLAPSED MENU -->\n\t\t\t<div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\n\t\t\t\t<button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarNavAltMarkup\" aria-expanded=\"false\" aria-label=\"Toggle navigation\" mbr-if=\"showItems || showSocial || showButtons\">\n\t\t\t\t\t<div class=\"hamburger\">\n\t\t\t\t\t\t<span></span>\n\t\t\t\t\t\t<span></span>\n\t\t\t\t\t\t<span></span>\n\t\t\t\t\t\t<span></span>\n\t\t\t\t\t</div>\n\t\t\t\t</button>\n\t\t\t\t<!-- NAVBAR ITEMS -->\n\t\t\t\t<ul mbr-menu class=\"navbar-nav nav-dropdown\" mbr-theme-style=\"display-7\" mbr-if=\"showItems\" mbr-class=\"{'nav-right': !showButtons,'navbar-nav-top-padding': isPublish && !showBrand && !showLogo}\"><li class=\"nav-item dropdown\">\n\t\t\t\t\t\t<a class=\"nav-link mbr-semibold link text-black dropdown-toggle\" href=\"https://mobirise.com\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" data-toggle=\"dropdown-submenu\" aria-expanded=\"false\">How to</a><div class=\"dropdown-menu\"><a class=\"mbr-semibold text-black dropdown-item\" href=\"page1.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">&nbsp; Use the app (Part I)<br></a><a class=\"mbr-semibold text-black dropdown-item\" href=\"page2.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">Use the app (Part II)</a><a class=\"mbr-semibold text-black dropdown-item\" href=\"page3.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">Create custom forms</a></div>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link mbr-semibold link text-black\" href=\"page4.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">Blog/Articles</a></li>\n\t\t\t\t\t\n\t\t\t\t\t\n\n\n\t\t\t\t\t\n\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link mbr-semibold link text-black\" href=\"https://mobirise.com\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">Contact US</a></li></ul>\n\t\t\t\t<!-- NAVBAR ITEMS END -->\n\t\t\t\t<!-- SOCIAL ICON -->\n\t\t\t\t<div class=\"menu-social-list\" mbr-if=\"showSocial\" mbr-list mbr-list-grow=\"socialCount\" mbr-link-type=\"socials\">\n\t\t\t\t\t<a href=\"https://twitter.com/8bsite\" target=\"_blank\" class=\"iconfont-wrapper\">\n\t\t\t\t\t\t<span mbr-icon class=\"amp-iconfont animation-normal fa-pinterest-p fa\"></span>\n\t\t\t\t\t</a>\n\t\t\t\t\t<a href=\"https://www.facebook.com/8bsite/\" target=\"_blank\" class=\"iconfont-wrapper\">\n\t\t\t\t\t\t<span mbr-icon class=\"amp-iconfont animation-normal fa-facebook-official fa\"></span>\n\t\t\t\t\t</a>\n\n\n\n\t\t\t\t</div>\n\t\t\t\t<!-- SOCIAL ICON END -->\n\t\t\t\t<!-- SHOW BUTTON -->\n\t\t\t\t<div mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-7\" class=\"navbar-buttons mbr-section-btn\"><a class=\"btn btn-md btn-black mbr-semibold\" href=\"https://mobirise.com\" data-app-placeholder=\"Type Text\">Shop\n\t\t\t\t\t\tNow</a></div>\n\t\t\t\t<!-- SHOW BUTTON END -->\n\t\t\t</div>\n\t\t\t<!-- COLLAPSED MENU END -->\n\t\t\t<button class=\"navbar-toggler hide\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarNavAltMarkup\" aria-expanded=\"false\" aria-label=\"Toggle navigation\" mbr-if=\"showItems || showSocial || showButtons\">\n\t\t\t\t<div class=\"hamburger\">\n\t\t\t\t\t<span></span>\n\t\t\t\t\t<span></span>\n\t\t\t\t\t<span></span>\n\t\t\t\t\t<span></span>\n\t\t\t\t</div>\n\t\t\t</button>\n\t\t\t<button on=\"tap:sidebar.toggle\" class=\"ampstart-btn hamburger\" mbr-if=\"(showItems||showButtons)\">\n\t\t\t\t<span></span>\n\t\t\t\t<span></span>\n\t\t\t\t<span></span>\n\t\t\t\t<span></span>\n\t\t\t</button>\n\t\t</div>\n\t</nav>\n\t<!-- AMP plug -->\n\t<amp-sidebar id=\"sidebar\" layout=\"nodisplay\" side=\"{{sidebarSide}}\">\n\t\t<div class=\"builder-sidebar\" id=\"builder-sidebar\">\n\t\t\t<button on=\"tap:sidebar.close\" class=\"close-sidebar\">\n\t\t\t\t<span></span>\n\t\t\t\t<span></span>\n\t\t\t</button>\n\t\t</div>\n\t</amp-sidebar>\n\t<!-- </div> -->\n</section>",
+          "_customHTML": "<section class=\"menu1 menu horizontal-menu\" group=\"Menu\" plugins=\"DropDown, amp-main, amp-sidebar\" always-top global once=\"menu\">\n\t<mbr-parameters>\n\t\t<!-- Block parameters controls (Blue \"Gear\" panel) -->\n\t\t<!--  -->\n\t\t<header>Size</header>\n\t\t<input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n\t\t<input type=\"checkbox\" title=\"Sticky Position\" name=\"sticky\" checked>\n\t\t<!--  -->\n\t\t<header>Show/Hide</header>\n\t\t<input type=\"checkbox\" title=\"Logo\" name=\"showLogo\" checked>\n\t\t<input type=\"range\" title=\"Size\" name=\"logoSize\" min=\"30\" max=\"120\" value=\"30\" step=\"10\" condition=\"showLogo\">\n\t\t<input type=\"checkbox\" title=\"Brand Name\" name=\"showBrand\" checked>\n\t\t<input type=\"checkbox\" title=\"Menu Items\" name=\"showItems\" checked>\n\t\t<input type=\"checkbox\" title=\"Button(s)\" name=\"showButtons\">\n\t\t<input type=\"checkbox\" title=\"Social\" name=\"showSocial\" checked>\n\t\t<input type=\"range\" inline title=\"Icons Count\" name=\"socialCount\" min=\"1\" max=\"6\" value=\"2\" step=\"1\" condition=\"showSocial\">\n\t\t<header>Sidebar</header>\n\t\t<select title=\"Side\" name=\"sidebarSide\">\n\t\t\t<option value=\"left\">Left</option>\n\t\t\t<option value=\"right\" selected>Right</option>\n\t\t</select>\n\t\t<input type=\"color\" title=\"Hamburger Color\" name=\"hamburgerColor\" value=\"#232323\">\n\t\t<header>Background</header>\n\t\t<input type=\"color\" title=\"Background Color\" name=\"menuBgColor\" value=\"#ffffff\" required>\n\t\t<!-- End block parameters -->\n\t</mbr-parameters>\n\t<!-- <div class=\"menu-wrapper\"> -->\n\t<nav class=\"navbar navbar-dropdown navbar-expand-lg\" mbr-class=\"{'navbar-fixed-top': sticky}\">\n\t\t<div class=\"menu-container\" mbr-class=\"{'container': !fullWidth,\n\t\t\t\t\t\t'container-fluid': fullWidth,\n\t\t\t\t\t\t'mbr-jc-e': !showLogo && !showBrand}\">\n\t\t\t<!-- SHOW LOGO -->\n\t\t\t<div class=\"navbar-brand\" mbr-if=\"showLogo || showBrand\">\n\t\t\t\t<div mbr-if=\"showLogo\" class=\"navbar-logo\">\n\t\t\t\t\t<amp-img src=\"@PROJECT_PATH@/assets/images/mbapplogo-228x216.png\" layout=\"responsive\" height=\"28\" width=\"29.555555555555557\" alt=\"image\" class=\"placeholder-loader\">\n\t\t\t\t\t\t<div placeholder class=\"placeholder\"></div>\n\t\t\t\t\t\t<img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/mbapplogo-228x216.png\" alt title>\n\t\t\t\t\t</amp-img>\n\t\t\t\t</div>\n\t\t\t\t<span mbr-if=\"showBrand\" mbr-buttons mbr-theme-style=\"display-5\" class=\"navbar-caption-wrap\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove\"><a class=\"navbar-caption mbr-semibold text-black\" data-app-selector=\".navbar-caption\" href=\"index.html\" data-app-placeholder=\"Type Text\">Microblading App Help</a></span>\n\t\t\t</div>\n\t\t\t<!-- SHOW LOGO END -->\n\t\t\t<!-- COLLAPSED MENU -->\n\t\t\t<div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\n\t\t\t\t<button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarNavAltMarkup\" aria-expanded=\"false\" aria-label=\"Toggle navigation\" mbr-if=\"showItems || showSocial || showButtons\">\n\t\t\t\t\t<div class=\"hamburger\">\n\t\t\t\t\t\t<span></span>\n\t\t\t\t\t\t<span></span>\n\t\t\t\t\t\t<span></span>\n\t\t\t\t\t\t<span></span>\n\t\t\t\t\t</div>\n\t\t\t\t</button>\n\t\t\t\t<!-- NAVBAR ITEMS -->\n\t\t\t\t<ul mbr-menu class=\"navbar-nav nav-dropdown\" mbr-theme-style=\"display-7\" mbr-if=\"showItems\" mbr-class=\"{'nav-right': !showButtons,'navbar-nav-top-padding': isPublish && !showBrand && !showLogo}\"><li class=\"nav-item dropdown\">\n\t\t\t\t\t\t<a class=\"nav-link mbr-semibold link text-black dropdown-toggle\" href=\"https://mobirise.com\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" data-toggle=\"dropdown-submenu\" aria-expanded=\"false\">How to</a><div class=\"dropdown-menu\"><a class=\"mbr-semibold text-black dropdown-item\" href=\"page1.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">&nbsp; Use the app (Part I)<br></a><a class=\"mbr-semibold text-black dropdown-item\" href=\"page2.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">Use the app (Part II)</a><a class=\"mbr-semibold text-black dropdown-item\" href=\"page3.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">Create custom forms</a></div>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link mbr-semibold link text-black\" href=\"page4.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">Blog/Articles</a></li>\n\t\t\t\t\t\n\t\t\t\t\t\n\n\n\t\t\t\t\t\n\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link mbr-semibold link text-black\" href=\"page5.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">Contact Us</a></li></ul>\n\t\t\t\t<!-- NAVBAR ITEMS END -->\n\t\t\t\t<!-- SOCIAL ICON -->\n\t\t\t\t<div class=\"menu-social-list\" mbr-if=\"showSocial\" mbr-list mbr-list-grow=\"socialCount\" mbr-link-type=\"socials\">\n\t\t\t\t\t<a href=\"https://twitter.com/8bsite\" target=\"_blank\" class=\"iconfont-wrapper\">\n\t\t\t\t\t\t<span mbr-icon class=\"amp-iconfont animation-normal fa-pinterest-p fa\"></span>\n\t\t\t\t\t</a>\n\t\t\t\t\t<a href=\"https://www.facebook.com/8bsite/\" target=\"_blank\" class=\"iconfont-wrapper\">\n\t\t\t\t\t\t<span mbr-icon class=\"amp-iconfont animation-normal fa-facebook-official fa\"></span>\n\t\t\t\t\t</a>\n\n\n\n\t\t\t\t</div>\n\t\t\t\t<!-- SOCIAL ICON END -->\n\t\t\t\t<!-- SHOW BUTTON -->\n\t\t\t\t<div mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-7\" class=\"navbar-buttons mbr-section-btn\"><a class=\"btn btn-md btn-black mbr-semibold\" href=\"https://mobirise.com\" data-app-placeholder=\"Type Text\">Shop\n\t\t\t\t\t\tNow</a></div>\n\t\t\t\t<!-- SHOW BUTTON END -->\n\t\t\t</div>\n\t\t\t<!-- COLLAPSED MENU END -->\n\t\t\t<button class=\"navbar-toggler hide\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarNavAltMarkup\" aria-expanded=\"false\" aria-label=\"Toggle navigation\" mbr-if=\"showItems || showSocial || showButtons\">\n\t\t\t\t<div class=\"hamburger\">\n\t\t\t\t\t<span></span>\n\t\t\t\t\t<span></span>\n\t\t\t\t\t<span></span>\n\t\t\t\t\t<span></span>\n\t\t\t\t</div>\n\t\t\t</button>\n\t\t\t<button on=\"tap:sidebar.toggle\" class=\"ampstart-btn hamburger\" mbr-if=\"(showItems||showButtons)\">\n\t\t\t\t<span></span>\n\t\t\t\t<span></span>\n\t\t\t\t<span></span>\n\t\t\t\t<span></span>\n\t\t\t</button>\n\t\t</div>\n\t</nav>\n\t<!-- AMP plug -->\n\t<amp-sidebar id=\"sidebar\" layout=\"nodisplay\" side=\"{{sidebarSide}}\">\n\t\t<div class=\"builder-sidebar\" id=\"builder-sidebar\">\n\t\t\t<button on=\"tap:sidebar.close\" class=\"close-sidebar\">\n\t\t\t\t<span></span>\n\t\t\t\t<span></span>\n\t\t\t</button>\n\t\t</div>\n\t</amp-sidebar>\n\t<!-- </div> -->\n</section>",
           "_cid": "s7stAkintS",
           "_anchor": "menu1-e",
           "_protectedParams": [],
@@ -1680,6 +1680,243 @@
     "page4.html": {
       "settings": {
         "title": "Amazing App",
+        "order": 2
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@menuBgColor",
+            "overflow": "visible",
+            ".navbar": {
+              "background": "@menuBgColor"
+            },
+            "& when not (@showBrand) and not (@showLogo)": {
+              ".navbar > .container, .navbar > .container-fluid": {
+                "justify-content": "flex-end !important"
+              }
+            },
+            "& when (@showLogo)": {
+              ".navbar-brand": {
+                ".navbar-logo": {
+                  "max-height": "60px",
+                  "max-width": "60px",
+                  "min-width": "30px",
+                  "@media (min-width: 992px)": {
+                    "max-width": "(@logoSize * 1px)",
+                    "amp-img, img": {
+                      "width": "(@logoSize * 1px)",
+                      "height": "100%"
+                    }
+                  },
+                  "amp-img, img": {
+                    "object-fit": "contain!important"
+                  }
+                }
+              }
+            },
+            "a": {
+              "&:before": {
+                "content": "none"
+              }
+            },
+            ".dropdown-item, .nav-link, .navbar-caption": {
+              "&:hover, &:active": {
+                "color": "@secondaryColor !important"
+              }
+            },
+            "& when (@showBrand)": {
+              ".navbar-caption": {
+                "line-height": "inherit !important"
+              }
+            },
+            ".navbar .navbar-collapse": {
+              "@media (max-width: 991px)": {
+                "background": "@menuBgColor",
+                "& when (@sidebarSide = 'left')": {
+                  "right": "auto",
+                  "left": "0"
+                }
+              }
+            },
+            "& when (@showItems)": {
+              ".nav-link": {
+                "margin": ".667em 1em !important",
+                "padding": "0 !important"
+              },
+              ".dropdown-item.active, .dropdown-item:active": {
+                "background-color": "transparent"
+              },
+              ".dropdown-menu": {
+                "background": "@menuBgColor"
+              }
+            },
+            ".hamburger span": {
+              "background-color": "@hamburgerColor"
+            },
+            ".builder-sidebar": {
+              "background-color": "@menuBgColor"
+            },
+            ".close-sidebar": {
+              "&:focus": {
+                "outline": "2px auto @primaryColor"
+              },
+              "span": {
+                "background-color": "@hamburgerColor"
+              }
+            },
+            "& when (@showSocial)": {
+              "& when (@showItems)": {
+                ".menu-social-list": {
+                  "@media (min-width: 992px)": {
+                    "padding-left": "1rem"
+                  },
+                  "@media (max-width: 991px)": {
+                    "padding-top": ".5rem"
+                  }
+                }
+              },
+              "& when (@showButtons)": {
+                ".menu-social-list": {
+                  "@media (max-width: 991px)": {
+                    "padding-bottom": ".5rem"
+                  }
+                }
+              }
+            },
+            ".iconfont-wrapper": {
+              "height": "1.3rem",
+              "width": "1.3rem",
+              "display": "inline-block",
+              ".amp-iconfont": {
+                "vertical-align": "middle",
+                "font-size": "1.3rem",
+                "width": "1.3rem"
+              }
+            }
+          },
+          "_name": "menu1",
+          "_customHTML": "<section class=\"menu1 menu horizontal-menu\" group=\"Menu\" plugins=\"DropDown, amp-main, amp-sidebar\" always-top global once=\"menu\">\n\t<mbr-parameters>\n\t\t<!-- Block parameters controls (Blue \"Gear\" panel) -->\n\t\t<!--  -->\n\t\t<header>Size</header>\n\t\t<input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n\t\t<input type=\"checkbox\" title=\"Sticky Position\" name=\"sticky\" checked>\n\t\t<!--  -->\n\t\t<header>Show/Hide</header>\n\t\t<input type=\"checkbox\" title=\"Logo\" name=\"showLogo\" checked>\n\t\t<input type=\"range\" title=\"Size\" name=\"logoSize\" min=\"30\" max=\"120\" value=\"30\" step=\"10\" condition=\"showLogo\">\n\t\t<input type=\"checkbox\" title=\"Brand Name\" name=\"showBrand\" checked>\n\t\t<input type=\"checkbox\" title=\"Menu Items\" name=\"showItems\" checked>\n\t\t<input type=\"checkbox\" title=\"Button(s)\" name=\"showButtons\">\n\t\t<input type=\"checkbox\" title=\"Social\" name=\"showSocial\" checked>\n\t\t<input type=\"range\" inline title=\"Icons Count\" name=\"socialCount\" min=\"1\" max=\"6\" value=\"2\" step=\"1\" condition=\"showSocial\">\n\t\t<header>Sidebar</header>\n\t\t<select title=\"Side\" name=\"sidebarSide\">\n\t\t\t<option value=\"left\">Left</option>\n\t\t\t<option value=\"right\" selected>Right</option>\n\t\t</select>\n\t\t<input type=\"color\" title=\"Hamburger Color\" name=\"hamburgerColor\" value=\"#232323\">\n\t\t<header>Background</header>\n\t\t<input type=\"color\" title=\"Background Color\" name=\"menuBgColor\" value=\"#ffffff\" required>\n\t\t<!-- End block parameters -->\n\t</mbr-parameters>\n\t<!-- <div class=\"menu-wrapper\"> -->\n\t<nav class=\"navbar navbar-dropdown navbar-expand-lg\" mbr-class=\"{'navbar-fixed-top': sticky}\">\n\t\t<div class=\"menu-container\" mbr-class=\"{'container': !fullWidth,\n\t\t\t\t\t\t'container-fluid': fullWidth,\n\t\t\t\t\t\t'mbr-jc-e': !showLogo && !showBrand}\">\n\t\t\t<!-- SHOW LOGO -->\n\t\t\t<div class=\"navbar-brand\" mbr-if=\"showLogo || showBrand\">\n\t\t\t\t<div mbr-if=\"showLogo\" class=\"navbar-logo\">\n\t\t\t\t\t<amp-img src=\"@PROJECT_PATH@/assets/images/mbapplogo-228x216.png\" layout=\"responsive\" height=\"28\" width=\"29.555555555555557\" alt=\"image\" class=\"placeholder-loader\">\n\t\t\t\t\t\t<div placeholder class=\"placeholder\"></div>\n\t\t\t\t\t\t<img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/mbapplogo-228x216.png\" alt title>\n\t\t\t\t\t</amp-img>\n\t\t\t\t</div>\n\t\t\t\t<span mbr-if=\"showBrand\" mbr-buttons mbr-theme-style=\"display-5\" class=\"navbar-caption-wrap\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove\"><a class=\"navbar-caption mbr-semibold text-black\" data-app-selector=\".navbar-caption\" href=\"index.html\" data-app-placeholder=\"Type Text\">Microblading App Help</a></span>\n\t\t\t</div>\n\t\t\t<!-- SHOW LOGO END -->\n\t\t\t<!-- COLLAPSED MENU -->\n\t\t\t<div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\n\t\t\t\t<button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarNavAltMarkup\" aria-expanded=\"false\" aria-label=\"Toggle navigation\" mbr-if=\"showItems || showSocial || showButtons\">\n\t\t\t\t\t<div class=\"hamburger\">\n\t\t\t\t\t\t<span></span>\n\t\t\t\t\t\t<span></span>\n\t\t\t\t\t\t<span></span>\n\t\t\t\t\t\t<span></span>\n\t\t\t\t\t</div>\n\t\t\t\t</button>\n\t\t\t\t<!-- NAVBAR ITEMS -->\n\t\t\t\t<ul mbr-menu class=\"navbar-nav nav-dropdown\" mbr-theme-style=\"display-7\" mbr-if=\"showItems\" mbr-class=\"{'nav-right': !showButtons,'navbar-nav-top-padding': isPublish && !showBrand && !showLogo}\"><li class=\"nav-item dropdown\">\n\t\t\t\t\t\t<a class=\"nav-link mbr-semibold link text-black dropdown-toggle\" href=\"https://mobirise.com\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" data-toggle=\"dropdown-submenu\" aria-expanded=\"false\">How to</a><div class=\"dropdown-menu\"><a class=\"mbr-semibold text-black dropdown-item\" href=\"page1.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">&nbsp; Use the app (Part I)<br></a><a class=\"mbr-semibold text-black dropdown-item\" href=\"page2.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">Use the app (Part II)</a><a class=\"mbr-semibold text-black dropdown-item\" href=\"page3.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">Create custom forms</a></div>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link mbr-semibold link text-black\" href=\"page4.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">Blog/Articles</a></li>\n\t\t\t\t\t\n\t\t\t\t\t\n\n\n\t\t\t\t\t\n\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link mbr-semibold link text-black\" href=\"page5.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">Contact Us</a></li></ul>\n\t\t\t\t<!-- NAVBAR ITEMS END -->\n\t\t\t\t<!-- SOCIAL ICON -->\n\t\t\t\t<div class=\"menu-social-list\" mbr-if=\"showSocial\" mbr-list mbr-list-grow=\"socialCount\" mbr-link-type=\"socials\">\n\t\t\t\t\t<a href=\"https://twitter.com/8bsite\" target=\"_blank\" class=\"iconfont-wrapper\">\n\t\t\t\t\t\t<span mbr-icon class=\"amp-iconfont animation-normal fa-pinterest-p fa\"></span>\n\t\t\t\t\t</a>\n\t\t\t\t\t<a href=\"https://www.facebook.com/8bsite/\" target=\"_blank\" class=\"iconfont-wrapper\">\n\t\t\t\t\t\t<span mbr-icon class=\"amp-iconfont animation-normal fa-facebook-official fa\"></span>\n\t\t\t\t\t</a>\n\n\n\n\t\t\t\t</div>\n\t\t\t\t<!-- SOCIAL ICON END -->\n\t\t\t\t<!-- SHOW BUTTON -->\n\t\t\t\t<div mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-7\" class=\"navbar-buttons mbr-section-btn\"><a class=\"btn btn-md btn-black mbr-semibold\" href=\"https://mobirise.com\" data-app-placeholder=\"Type Text\">Shop\n\t\t\t\t\t\tNow</a></div>\n\t\t\t\t<!-- SHOW BUTTON END -->\n\t\t\t</div>\n\t\t\t<!-- COLLAPSED MENU END -->\n\t\t\t<button class=\"navbar-toggler hide\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarNavAltMarkup\" aria-expanded=\"false\" aria-label=\"Toggle navigation\" mbr-if=\"showItems || showSocial || showButtons\">\n\t\t\t\t<div class=\"hamburger\">\n\t\t\t\t\t<span></span>\n\t\t\t\t\t<span></span>\n\t\t\t\t\t<span></span>\n\t\t\t\t\t<span></span>\n\t\t\t\t</div>\n\t\t\t</button>\n\t\t\t<button on=\"tap:sidebar.toggle\" class=\"ampstart-btn hamburger\" mbr-if=\"(showItems||showButtons)\">\n\t\t\t\t<span></span>\n\t\t\t\t<span></span>\n\t\t\t\t<span></span>\n\t\t\t\t<span></span>\n\t\t\t</button>\n\t\t</div>\n\t</nav>\n\t<!-- AMP plug -->\n\t<amp-sidebar id=\"sidebar\" layout=\"nodisplay\" side=\"{{sidebarSide}}\">\n\t\t<div class=\"builder-sidebar\" id=\"builder-sidebar\">\n\t\t\t<button on=\"tap:sidebar.close\" class=\"close-sidebar\">\n\t\t\t\t<span></span>\n\t\t\t\t<span></span>\n\t\t\t</button>\n\t\t</div>\n\t</amp-sidebar>\n\t<!-- </div> -->\n</section>",
+          "_cid": "s7stAkintS",
+          "_anchor": "menu1-p",
+          "_protectedParams": [],
+          "_global": true,
+          "_once": "menu",
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)",
+              "& when (@overlay)": {
+                ".mbr-overlay": {
+                  "background": "@overlayColor",
+                  "opacity": "@overlayOpacity"
+                }
+              }
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            ".end": {
+              "display": "flex",
+              "align-items": "flex-end"
+            },
+            "p, h1": {
+              "z-index": "3",
+              "position": "relative"
+            },
+            ".row-2": {
+              "margin-top": "2rem"
+            },
+            "@media (min-width: 992px)": {
+              ".row-2": {
+                "margin-top": "-3.5rem"
+              }
+            },
+            "@media (max-width: 767px)": {
+              ".end": {
+                "justify-content": "center"
+              }
+            },
+            ".mbr-section-title": {
+              "color": "#ff5500"
+            },
+            ".image-block": {
+              "position": "relative",
+              "a": {
+                "border-bottom": "0px",
+                "&:before": {
+                  "content": "none"
+                }
+              },
+              "&:after": {
+                "content": "''",
+                "position": "absolute",
+                "left": "0",
+                "top": "0",
+                "width": "0%",
+                "background": "@primaryColor",
+                "height": "100%",
+                "z-index": "1",
+                "transition": "all 0.3s",
+                "pointer-events": "none",
+                "opacity": "0.8"
+              },
+              "&:hover": {
+                "&:after": {
+                  "width": "100%"
+                }
+              }
+            }
+          },
+          "_name": "header1",
+          "_customHTML": "<section class=\"header1\" group=\"Headers\" plugins=\"amp-main\">\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"15\" step=\"1\" value=\"5\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"15\" step=\"1\" value=\"5\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubTitle\" checked>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" required>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background1.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\"></div>\n    <div mbr-class=\"{'container':!fullWidth,\n                     'container-fluid': fullWidth}\">\n        <div class=\"mbr-row\">\n            <div class=\"mbr-col-sm-12 mbr-col-md-12 mbr-col-lg-8\" mbr-if=\"showTitle\">\n                <h1 class=\"mbr-section-title align-left mbr-fonts-style mbr-semibold mbr-pb-4\" mbr-theme-style=\"display-1\" data-app-selector=\".mbr-section-title\">Cover Story: The Amazing Microblading App!</h1>\n            </div>\n        </div>\n\n        <div class=\"mbr-row mbr-jc-e\">\n            <div class=\"mbr-col-sm-12 mbr-col-md-12 mbr-col-lg-10\" mbr-if=\"showText\">\n                <p class=\"mbr-text align-left mbr-semibold mbr-fonts-style\" mbr-class=\"{'mbr-pt-2': showTitle || showSubtitle}\" mbr-theme-style=\"display-2\" mbr-if=\"showText\" data-app-selector=\".mbr-section-btn, .mbr-text\">Miami Beach Microblading's Ana Perrone was once again featured in the cover of another international magazine. Below you can read her article written for the 7th edition of PMU International Magazine.</p>\n            </div>\n        </div>\n\n        <div class=\"mbr-row row-2\">\n\n            <div class=\"mbr-col-sm-12 end mbr-col-md-12 mbr-col-lg-5\">\n                <h2 class=\"align-left mbr-fonts-style mbr-bold md-pb\" mbr-theme-style=\"display-5\" mbr-if=\"showSubTitle\">\n                    Featured in PMU International, July 2019</h2>\n            </div>\n\n            <div class=\"mbr-col-sm-12 mbr-col-md-12 mbr-col-lg-7\">\n                <div class=\"image-block\">\n                    <amp-img src=\"@PROJECT_PATH@/assets/images/ana-pmu-international-cover-956x1280.jpg\" layout=\"responsive\" width=\"528.040625\" height=\"707\" alt=\"image\" class=\"placeholder-loader\">\n                        <div placeholder class=\"placeholder\"></div>\n                        <a href=\"#\"><img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/ana-pmu-international-cover-956x1280.jpg\" alt title></a>\n                    </amp-img>\n                </div>\n            </div>\n\n\n        </div>\n    </div>\n</section>",
+          "_cid": "s7t6KaiFx1",
+          "_anchor": "header1-q",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)",
+              "& when (@overlay)": {
+                ".mbr-overlay": {
+                  "background": "@overlayColor",
+                  "opacity": "@overlayOpacity"
+                }
+              }
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "H2": {
+              "color": "#ff5500"
+            }
+          },
+          "_name": "content2",
+          "_customHTML": "<section class=\"content2\" group=\"Content\" plugins=\"amp-main\">\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"15\" step=\"1\" value=\"5\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"15\" step=\"1\" value=\"5\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" required>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background1.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\"></div>\n    <div mbr-class=\"{'container':!fullWidth,\n                     'container-fluid': fullWidth}\">\n\n\n        <div class=\"mbr-row mbr-pb-5 mbr-jc-e\">\n            <div class=\"mbr-col-sm-12 mbr-col-md-12 mbr-col-lg-12\">\n                <h2 class=\"align-left mbr-pb-2 mbr-fonts-style mbr-bold md-pb\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\">by Ana Perrone International PMU Trainer &amp; Microblading Instructor at Swiss Color®Specialized in hair stroke technique and developer of the \"Microblading App\"PMU &amp; TechnologyGroundbreaking Microblading Appdeveloped by a PMU artist for PMU artists.<div><br></div><div><br></div></h2>\n                <p class=\"text align-left mbr-semibold mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".text\" mbr-if=\"showText\">My name is Ana Perrone, and I am the owner of the Miami Beach Microblading Medical Spa &amp; Swiss Color® Academy branch in Miami, FL, U.S.A.. And I’ve grown tired of spending money to print all my clients consent forms and files in paper form so I’ve decided to create an app to get rid of paper forms forever by having my clients fill out electronic forms, therefore also saving some valuable storage space inside my medspa. It seems like every month I was spending more and more money on printer ink and was running low in file storage space inside my mini office. Not many people realize but on a standard color jet printer one page is $0.30-$0.40 in ink cost! If you have a 10 page clients form (like i had) its $4 just to print blank form! I wanted to know how come nobody had invented a phone/tablet application for the client to simply fill out and sign electronic forms similar to what we already have in most doctors’ offices here in America. In the beginning the app was made just for my PMU and microblading business in Miami Beach.<br><br>But with time we developed and improved the app with the help of fellow artists and students. So we decided to make the app available for everyone on both iOS and Android platform for free. Not just an e-forms app, we also implanted an awesome design option for students and artists to practice microblading and PMU using any photograph with a rich set of tools like golden ratio caliper and color palette with 16 million colors. After that we also added a simple but effective scheduling feature for a single user and the “news” section which is where artists have a space to announce their newest contributions to our industry, being that machines, inks, courses, books, shared knowledges, blogs, art, etc. The “forms” tool has already preloaded templates such as medical history forms, consent to receive PMU treatment form, aftercare forms, photo-video release, etc, in 3 different languages (English, Portuguese and Spanish). After being filled out and signed by the client these forms are stored on the AWS (Amazon servers) cloud and encrypted, meaning; if the technician looses their phone or tablet, they can retrieve all their data with their login from any other new mobile device. A copy of the forms in pdf format are also emailed automatically to the artist and the artist can also email the filled form to anyone or print directly from the app. The template forms have a space for the artist to add pictures and notes to each client form after filled. So if the artist forgot to add a note to the client’s file, something like “client had very oily skin and bled a lot” or “I used pigment XYZ lot number 1234, exp 12/19 in this client with a 6 speed and a 3RL needle conf”, he can do so later. Besides from the preloaded templates, there is the option to create 100% customized forms in any language, so any artist in the world can use this app for their clients to fill out forms with the wording and language of their preference. It is the best part of the app because it helps artists and business save so much time and money. Imagine you are at home and your client calls complaining about something during healing time and you have no idea what pigment or tool you used or who this person is because the client files are in the office. This will never happen if you are using the Microblading Appbecause you can have access to the client’s files from anywhere from your mobile device (phone or tablet). The first 10 customer forms in the app are free, you have the option to buy additional forms packages or just purchase unlimited forms for only $9.99 per month. Unfortunately I have to charge for unlimited forms since I have to pay for storage fees to the secure first-class and reliable cloud hosting (Amazon). Although the app is very easy to use and can have the client's custom consent forms in any language, today the basic commands are in English: commands like \"save\" \"cancel\" \"yes\" \"add\" etc, but I uploaded 3 videos on youtube for my Brazilian students narrating step by step in Portuguese how to use the two most popular modalities of the application that are drawing (Projects) and client files and consent forms (Forms). All other great features in the app, such as “Projects” (drawing feature for tablets) “Scheduling” and “News”, are 100% free. In the Projects feature the student can practice eyebrow mapping, microblading and microshading simulation on any image by using all the amazing digital tools such as golden ratio caliper, outline pen, different microblades, over 100 different shades, eraser, layers, lines, etc, while the existing artist can create a simulated look of what their client would look like with a pair of new eyebrows that would suit better their client’s face. I myself, and a lot of artists I know who use the app, use this future for distance consultations: the client sends a hi-res selfie of frontal and profile face shots taken by another person and we measure and draw 3 different choices of eyebrows, take screen shots and send it back to the client to see which style they prefer. Of course it’s not 3D so it’s not 100% accurate but the client can have an idea of shape, color and width and usually end up booking the procedure, even if they are from out of the town, state or country. This part of the app helps us provide high tech top notch customer service even before the client visit. 21 century - age of distant consultation! The Schedulingfeature from the app is simple but very helpful for the individual artist. It’s a simple calendar where the technician populates the time and date and adds the client’s name and email to the desired appointment. The client will receive automatic email reminders of their appointments from the app. When you click on the News icon inside the Microblading APP you will find the most-up-to-date blogs, articles and offers from the industry leaders, whether they are machine and pigment manufacturers with special deal for their products, famous masters’ tips, free stuff and advice, interesting PMU inventions and discoveries, event promotions, special discount on classes and many more game changing information. Those vouchers and offers are exclusive, available in the app Newsfeature only.<br><br>Always Innovating<br><br>I’m excited to announce that new developments and improvements are coming in the near future for the app. We are currently working on adding more features to the application such as the option to use a chat inside the app and other marketing tools for artists. I believe that there is nothing that is 100% good, we always have room to improve our professional skills. I always study and constantly seek for new knowledge to share with students and colleagues. About the Author: Ana Luiza Perrone, or Ana Perrone, and is best known internationally as an instructor of Microblading and PMU trainer for Swiss Color® International and an artist formed by the Italian Biotek (Academia Toscana) and by Phibrows. Ana works within her medical spa in Miami Beach serving clients and giving private classes, classes for groups within her PMU school at Miami Beach in Florida, which is the only subsidiary of Swiss Color® in the United States and also travels to give workshops and presentations in other American and international cities. This year Ana will be a master speaker at the Global Permanent event in Sochi, Russia and at the World Wide Eyebrow Festival in Rotterdam. Ana also developed an online course to complete her classes live, the student first learns the whole theoretical part online with multiple choice tests to move from one level to the next, then comes to practice class and then must continue homework in the After completing all practical exercises, you will receive your final certificate of artist by post, so your course or workshop does not only last for a day or two, but weeks, sometimes months until the student is approved. all his practical exercises honoring the name of the school with excellence in his future works.</p>\n            </div>\n        </div>\n\n    </div>\n</section>",
+          "_cid": "s7t6NvxCmY",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "content2-r"
+        }
+      ]
+    },
+    "page5.html": {
+      "settings": {
+        "title": "Contact us",
         "order": 1
       },
       "components": [
@@ -1796,9 +2033,9 @@
             }
           },
           "_name": "menu1",
-          "_customHTML": "<section class=\"menu1 menu horizontal-menu\" group=\"Menu\" plugins=\"DropDown, amp-main, amp-sidebar\" always-top global once=\"menu\">\n\t<mbr-parameters>\n\t\t<!-- Block parameters controls (Blue \"Gear\" panel) -->\n\t\t<!--  -->\n\t\t<header>Size</header>\n\t\t<input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n\t\t<input type=\"checkbox\" title=\"Sticky Position\" name=\"sticky\" checked>\n\t\t<!--  -->\n\t\t<header>Show/Hide</header>\n\t\t<input type=\"checkbox\" title=\"Logo\" name=\"showLogo\" checked>\n\t\t<input type=\"range\" title=\"Size\" name=\"logoSize\" min=\"30\" max=\"120\" value=\"30\" step=\"10\" condition=\"showLogo\">\n\t\t<input type=\"checkbox\" title=\"Brand Name\" name=\"showBrand\" checked>\n\t\t<input type=\"checkbox\" title=\"Menu Items\" name=\"showItems\" checked>\n\t\t<input type=\"checkbox\" title=\"Button(s)\" name=\"showButtons\">\n\t\t<input type=\"checkbox\" title=\"Social\" name=\"showSocial\" checked>\n\t\t<input type=\"range\" inline title=\"Icons Count\" name=\"socialCount\" min=\"1\" max=\"6\" value=\"2\" step=\"1\" condition=\"showSocial\">\n\t\t<header>Sidebar</header>\n\t\t<select title=\"Side\" name=\"sidebarSide\">\n\t\t\t<option value=\"left\">Left</option>\n\t\t\t<option value=\"right\" selected>Right</option>\n\t\t</select>\n\t\t<input type=\"color\" title=\"Hamburger Color\" name=\"hamburgerColor\" value=\"#232323\">\n\t\t<header>Background</header>\n\t\t<input type=\"color\" title=\"Background Color\" name=\"menuBgColor\" value=\"#ffffff\" required>\n\t\t<!-- End block parameters -->\n\t</mbr-parameters>\n\t<!-- <div class=\"menu-wrapper\"> -->\n\t<nav class=\"navbar navbar-dropdown navbar-expand-lg\" mbr-class=\"{'navbar-fixed-top': sticky}\">\n\t\t<div class=\"menu-container\" mbr-class=\"{'container': !fullWidth,\n\t\t\t\t\t\t'container-fluid': fullWidth,\n\t\t\t\t\t\t'mbr-jc-e': !showLogo && !showBrand}\">\n\t\t\t<!-- SHOW LOGO -->\n\t\t\t<div class=\"navbar-brand\" mbr-if=\"showLogo || showBrand\">\n\t\t\t\t<div mbr-if=\"showLogo\" class=\"navbar-logo\">\n\t\t\t\t\t<amp-img src=\"@PROJECT_PATH@/assets/images/mbapplogo-228x216.png\" layout=\"responsive\" height=\"50\" width=\"52.77777777777778\" alt=\"image\" class=\"placeholder-loader\">\n\t\t\t\t\t\t<div placeholder class=\"placeholder\"></div>\n\t\t\t\t\t\t<img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/mbapplogo-228x216.png\" alt title>\n\t\t\t\t\t</amp-img>\n\t\t\t\t</div>\n\t\t\t\t<span mbr-if=\"showBrand\" mbr-buttons mbr-theme-style=\"display-5\" class=\"navbar-caption-wrap\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove\"><a class=\"navbar-caption mbr-semibold text-black\" data-app-selector=\".navbar-caption\" href=\"index.html\" data-app-placeholder=\"Type Text\">Microblading App Help</a></span>\n\t\t\t</div>\n\t\t\t<!-- SHOW LOGO END -->\n\t\t\t<!-- COLLAPSED MENU -->\n\t\t\t<div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\n\t\t\t\t<button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarNavAltMarkup\" aria-expanded=\"false\" aria-label=\"Toggle navigation\" mbr-if=\"showItems || showSocial || showButtons\">\n\t\t\t\t\t<div class=\"hamburger\">\n\t\t\t\t\t\t<span></span>\n\t\t\t\t\t\t<span></span>\n\t\t\t\t\t\t<span></span>\n\t\t\t\t\t\t<span></span>\n\t\t\t\t\t</div>\n\t\t\t\t</button>\n\t\t\t\t<!-- NAVBAR ITEMS -->\n\t\t\t\t<ul mbr-menu class=\"navbar-nav nav-dropdown\" mbr-theme-style=\"display-7\" mbr-if=\"showItems\" mbr-class=\"{'nav-right': !showButtons,'navbar-nav-top-padding': isPublish && !showBrand && !showLogo}\"><li class=\"nav-item dropdown\">\n\t\t\t\t\t\t<a class=\"nav-link mbr-semibold link text-black dropdown-toggle\" href=\"https://mobirise.com\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" data-toggle=\"dropdown-submenu\" aria-expanded=\"false\">How to</a><div class=\"dropdown-menu\"><a class=\"mbr-semibold text-black dropdown-item\" href=\"page1.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">&nbsp; Use the app (Part I)<br></a><a class=\"mbr-semibold text-black dropdown-item\" href=\"page2.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">Use the app (Part II)</a><a class=\"mbr-semibold text-black dropdown-item\" href=\"page3.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">Create custom forms</a></div>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link mbr-semibold link text-black\" href=\"page4.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">Blog/Articles</a></li>\n\t\t\t\t\t\n\t\t\t\t\t\n\n\n\t\t\t\t\t\n\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link mbr-semibold link text-black\" href=\"https://mobirise.com\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">Contact US</a></li></ul>\n\t\t\t\t<!-- NAVBAR ITEMS END -->\n\t\t\t\t<!-- SOCIAL ICON -->\n\t\t\t\t<div class=\"menu-social-list\" mbr-if=\"showSocial\" mbr-list mbr-list-grow=\"socialCount\" mbr-link-type=\"socials\">\n\t\t\t\t\t<a href=\"https://twitter.com/8bsite\" target=\"_blank\" class=\"iconfont-wrapper\">\n\t\t\t\t\t\t<span mbr-icon class=\"amp-iconfont animation-normal fa-pinterest-p fa\"></span>\n\t\t\t\t\t</a>\n\t\t\t\t\t<a href=\"https://www.facebook.com/8bsite/\" target=\"_blank\" class=\"iconfont-wrapper\">\n\t\t\t\t\t\t<span mbr-icon class=\"amp-iconfont animation-normal fa-facebook-official fa\"></span>\n\t\t\t\t\t</a>\n\n\n\n\t\t\t\t</div>\n\t\t\t\t<!-- SOCIAL ICON END -->\n\t\t\t\t<!-- SHOW BUTTON -->\n\t\t\t\t<div mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-7\" class=\"navbar-buttons mbr-section-btn\"><a class=\"btn btn-md btn-black mbr-semibold\" href=\"https://mobirise.com\" data-app-placeholder=\"Type Text\">Shop\n\t\t\t\t\t\tNow</a></div>\n\t\t\t\t<!-- SHOW BUTTON END -->\n\t\t\t</div>\n\t\t\t<!-- COLLAPSED MENU END -->\n\t\t\t<button class=\"navbar-toggler hide\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarNavAltMarkup\" aria-expanded=\"false\" aria-label=\"Toggle navigation\" mbr-if=\"showItems || showSocial || showButtons\">\n\t\t\t\t<div class=\"hamburger\">\n\t\t\t\t\t<span></span>\n\t\t\t\t\t<span></span>\n\t\t\t\t\t<span></span>\n\t\t\t\t\t<span></span>\n\t\t\t\t</div>\n\t\t\t</button>\n\t\t\t<button on=\"tap:sidebar.toggle\" class=\"ampstart-btn hamburger\" mbr-if=\"(showItems||showButtons)\">\n\t\t\t\t<span></span>\n\t\t\t\t<span></span>\n\t\t\t\t<span></span>\n\t\t\t\t<span></span>\n\t\t\t</button>\n\t\t</div>\n\t</nav>\n\t<!-- AMP plug -->\n\t<amp-sidebar id=\"sidebar\" layout=\"nodisplay\" side=\"{{sidebarSide}}\">\n\t\t<div class=\"builder-sidebar\" id=\"builder-sidebar\">\n\t\t\t<button on=\"tap:sidebar.close\" class=\"close-sidebar\">\n\t\t\t\t<span></span>\n\t\t\t\t<span></span>\n\t\t\t</button>\n\t\t</div>\n\t</amp-sidebar>\n\t<!-- </div> -->\n</section>",
+          "_customHTML": "<section class=\"menu1 menu horizontal-menu\" group=\"Menu\" plugins=\"DropDown, amp-main, amp-sidebar\" always-top global once=\"menu\">\n\t<mbr-parameters>\n\t\t<!-- Block parameters controls (Blue \"Gear\" panel) -->\n\t\t<!--  -->\n\t\t<header>Size</header>\n\t\t<input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n\t\t<input type=\"checkbox\" title=\"Sticky Position\" name=\"sticky\" checked>\n\t\t<!--  -->\n\t\t<header>Show/Hide</header>\n\t\t<input type=\"checkbox\" title=\"Logo\" name=\"showLogo\" checked>\n\t\t<input type=\"range\" title=\"Size\" name=\"logoSize\" min=\"30\" max=\"120\" value=\"30\" step=\"10\" condition=\"showLogo\">\n\t\t<input type=\"checkbox\" title=\"Brand Name\" name=\"showBrand\" checked>\n\t\t<input type=\"checkbox\" title=\"Menu Items\" name=\"showItems\" checked>\n\t\t<input type=\"checkbox\" title=\"Button(s)\" name=\"showButtons\">\n\t\t<input type=\"checkbox\" title=\"Social\" name=\"showSocial\" checked>\n\t\t<input type=\"range\" inline title=\"Icons Count\" name=\"socialCount\" min=\"1\" max=\"6\" value=\"2\" step=\"1\" condition=\"showSocial\">\n\t\t<header>Sidebar</header>\n\t\t<select title=\"Side\" name=\"sidebarSide\">\n\t\t\t<option value=\"left\">Left</option>\n\t\t\t<option value=\"right\" selected>Right</option>\n\t\t</select>\n\t\t<input type=\"color\" title=\"Hamburger Color\" name=\"hamburgerColor\" value=\"#232323\">\n\t\t<header>Background</header>\n\t\t<input type=\"color\" title=\"Background Color\" name=\"menuBgColor\" value=\"#ffffff\" required>\n\t\t<!-- End block parameters -->\n\t</mbr-parameters>\n\t<!-- <div class=\"menu-wrapper\"> -->\n\t<nav class=\"navbar navbar-dropdown navbar-expand-lg\" mbr-class=\"{'navbar-fixed-top': sticky}\">\n\t\t<div class=\"menu-container\" mbr-class=\"{'container': !fullWidth,\n\t\t\t\t\t\t'container-fluid': fullWidth,\n\t\t\t\t\t\t'mbr-jc-e': !showLogo && !showBrand}\">\n\t\t\t<!-- SHOW LOGO -->\n\t\t\t<div class=\"navbar-brand\" mbr-if=\"showLogo || showBrand\">\n\t\t\t\t<div mbr-if=\"showLogo\" class=\"navbar-logo\">\n\t\t\t\t\t<amp-img src=\"@PROJECT_PATH@/assets/images/mbapplogo-228x216.png\" layout=\"responsive\" height=\"28\" width=\"29.555555555555557\" alt=\"image\" class=\"placeholder-loader\">\n\t\t\t\t\t\t<div placeholder class=\"placeholder\"></div>\n\t\t\t\t\t\t<img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/mbapplogo-228x216.png\" alt title>\n\t\t\t\t\t</amp-img>\n\t\t\t\t</div>\n\t\t\t\t<span mbr-if=\"showBrand\" mbr-buttons mbr-theme-style=\"display-5\" class=\"navbar-caption-wrap\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove\"><a class=\"navbar-caption mbr-semibold text-black\" data-app-selector=\".navbar-caption\" href=\"index.html\" data-app-placeholder=\"Type Text\">Microblading App Help</a></span>\n\t\t\t</div>\n\t\t\t<!-- SHOW LOGO END -->\n\t\t\t<!-- COLLAPSED MENU -->\n\t\t\t<div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\n\t\t\t\t<button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarNavAltMarkup\" aria-expanded=\"false\" aria-label=\"Toggle navigation\" mbr-if=\"showItems || showSocial || showButtons\">\n\t\t\t\t\t<div class=\"hamburger\">\n\t\t\t\t\t\t<span></span>\n\t\t\t\t\t\t<span></span>\n\t\t\t\t\t\t<span></span>\n\t\t\t\t\t\t<span></span>\n\t\t\t\t\t</div>\n\t\t\t\t</button>\n\t\t\t\t<!-- NAVBAR ITEMS -->\n\t\t\t\t<ul mbr-menu class=\"navbar-nav nav-dropdown\" mbr-theme-style=\"display-7\" mbr-if=\"showItems\" mbr-class=\"{'nav-right': !showButtons,'navbar-nav-top-padding': isPublish && !showBrand && !showLogo}\"><li class=\"nav-item dropdown\">\n\t\t\t\t\t\t<a class=\"nav-link mbr-semibold link text-black dropdown-toggle\" href=\"https://mobirise.com\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" data-toggle=\"dropdown-submenu\" aria-expanded=\"false\">How to</a><div class=\"dropdown-menu\"><a class=\"mbr-semibold text-black dropdown-item\" href=\"page1.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">&nbsp; Use the app (Part I)<br></a><a class=\"mbr-semibold text-black dropdown-item\" href=\"page2.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">Use the app (Part II)</a><a class=\"mbr-semibold text-black dropdown-item\" href=\"page3.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">Create custom forms</a></div>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link mbr-semibold link text-black\" href=\"page4.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">Blog/Articles</a></li>\n\t\t\t\t\t\n\t\t\t\t\t\n\n\n\t\t\t\t\t\n\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link mbr-semibold link text-black\" href=\"page5.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">Contact Us</a></li></ul>\n\t\t\t\t<!-- NAVBAR ITEMS END -->\n\t\t\t\t<!-- SOCIAL ICON -->\n\t\t\t\t<div class=\"menu-social-list\" mbr-if=\"showSocial\" mbr-list mbr-list-grow=\"socialCount\" mbr-link-type=\"socials\">\n\t\t\t\t\t<a href=\"https://twitter.com/8bsite\" target=\"_blank\" class=\"iconfont-wrapper\">\n\t\t\t\t\t\t<span mbr-icon class=\"amp-iconfont animation-normal fa-pinterest-p fa\"></span>\n\t\t\t\t\t</a>\n\t\t\t\t\t<a href=\"https://www.facebook.com/8bsite/\" target=\"_blank\" class=\"iconfont-wrapper\">\n\t\t\t\t\t\t<span mbr-icon class=\"amp-iconfont animation-normal fa-facebook-official fa\"></span>\n\t\t\t\t\t</a>\n\n\n\n\t\t\t\t</div>\n\t\t\t\t<!-- SOCIAL ICON END -->\n\t\t\t\t<!-- SHOW BUTTON -->\n\t\t\t\t<div mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-7\" class=\"navbar-buttons mbr-section-btn\"><a class=\"btn btn-md btn-black mbr-semibold\" href=\"https://mobirise.com\" data-app-placeholder=\"Type Text\">Shop\n\t\t\t\t\t\tNow</a></div>\n\t\t\t\t<!-- SHOW BUTTON END -->\n\t\t\t</div>\n\t\t\t<!-- COLLAPSED MENU END -->\n\t\t\t<button class=\"navbar-toggler hide\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarNavAltMarkup\" aria-expanded=\"false\" aria-label=\"Toggle navigation\" mbr-if=\"showItems || showSocial || showButtons\">\n\t\t\t\t<div class=\"hamburger\">\n\t\t\t\t\t<span></span>\n\t\t\t\t\t<span></span>\n\t\t\t\t\t<span></span>\n\t\t\t\t\t<span></span>\n\t\t\t\t</div>\n\t\t\t</button>\n\t\t\t<button on=\"tap:sidebar.toggle\" class=\"ampstart-btn hamburger\" mbr-if=\"(showItems||showButtons)\">\n\t\t\t\t<span></span>\n\t\t\t\t<span></span>\n\t\t\t\t<span></span>\n\t\t\t\t<span></span>\n\t\t\t</button>\n\t\t</div>\n\t</nav>\n\t<!-- AMP plug -->\n\t<amp-sidebar id=\"sidebar\" layout=\"nodisplay\" side=\"{{sidebarSide}}\">\n\t\t<div class=\"builder-sidebar\" id=\"builder-sidebar\">\n\t\t\t<button on=\"tap:sidebar.close\" class=\"close-sidebar\">\n\t\t\t\t<span></span>\n\t\t\t\t<span></span>\n\t\t\t</button>\n\t\t</div>\n\t</amp-sidebar>\n\t<!-- </div> -->\n</section>",
           "_cid": "s7stAkintS",
-          "_anchor": "menu1-p",
+          "_anchor": "menu1-s",
           "_protectedParams": [],
           "_global": true,
           "_once": "menu",
@@ -1807,110 +2044,137 @@
         {
           "alias": false,
           "_styles": {
-            "padding-top": "(@paddingTop * 1rem)",
-            "padding-bottom": "(@paddingBottom * 1rem)",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            ".mbr-overlay": {
+              "background-color": "@overlayColor",
+              "opacity": "@overlayOpacity"
+            },
             "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)",
-              "& when (@overlay)": {
-                ".mbr-overlay": {
-                  "background": "@overlayColor",
-                  "opacity": "@overlayOpacity"
-                }
-              }
+              "background-image": "url(@bg-value)"
             },
             "& when (@bg-type = 'color')": {
               "background-color": "@bg-value"
             },
-            ".end": {
-              "display": "flex",
-              "align-items": "flex-end"
-            },
-            "p, h1": {
-              "z-index": "3",
-              "position": "relative"
-            },
-            ".row-2": {
-              "margin-top": "2rem"
-            },
-            "@media (min-width: 992px)": {
-              ".row-2": {
-                "margin-top": "-3.5rem"
-              }
-            },
-            "@media (max-width: 767px)": {
-              ".end": {
-                "justify-content": "center"
-              }
-            },
-            ".mbr-section-title": {
-              "color": "#ff5500"
-            },
-            ".image-block": {
-              "position": "relative",
-              "a": {
-                "border-bottom": "0px",
-                "&:before": {
-                  "content": "none"
+            "& when (@customStyle)": {
+              ".form-control, .field-input": {
+                "padding": "0.5rem",
+                "background-color": "@fieldColor",
+                "border-color": "@borderColor",
+                "color": "@formText",
+                "transition": "0.4s",
+                "box-shadow": "none",
+                "outline": "none",
+                "input::-webkit-input-placeholder, textarea::-webkit-input-placeholder": {
+                  "color": "@formPlaceholder"
+                },
+                "input:-moz-placeholder, textarea:-moz-placeholder": {
+                  "color": "@formPlaceholder"
+                },
+                "&:hover, &:focus": {
+                  "background-color": "@fieldHover",
+                  "border-color": "@borderHover",
+                  "color": "contrast(@formText, #000000, #ffffff, 30%)",
+                  "box-shadow": "none",
+                  "outline": "none",
+                  "input::-webkit-input-placeholder, textarea::-webkit-input-placeholder": {
+                    "color": "contrast(@formPlaceholder, #000000, #ffffff, 30%)"
+                  },
+                  "input:-moz-placeholder, textarea:-moz-placeholder": {
+                    "color": "contrast(@formPlaceholder, #000000, #ffffff, 30%)"
+                  }
                 }
               },
-              "&:after": {
-                "content": "''",
-                "position": "absolute",
-                "left": "0",
-                "top": "0",
-                "width": "0%",
-                "background": "@primaryColor",
-                "height": "100%",
-                "z-index": "1",
-                "transition": "all 0.3s",
-                "pointer-events": "none",
-                "opacity": "0.8"
+              ".jq-number__spin:hover, .jq-number__spin:focus": {
+                "background-color": "@fieldHover",
+                "border-color": "@borderHover",
+                "color": "contrast(@formText, #000000, #ffffff, 30%)",
+                "box-shadow": "none",
+                "outline": "none"
               },
+              ".jq-number__spin": {
+                "background-color": "@fieldColor",
+                "border-color": "@borderColor",
+                "color": "@formText",
+                "transition": "0.4s",
+                "box-shadow": "none",
+                "outline": "none"
+              },
+              ".jq-selectbox li, .jq-selectbox li": {
+                "background-color": "@fieldColor",
+                "color": "contrast(@fieldColor, #000000, #ffffff, 30%)"
+              },
+              ".jq-selectbox li:hover, .jq-selectbox li.selected": {
+                "background-color": "@fieldHover",
+                "color": "contrast(@fieldHover, #000000, #ffffff, 30%)"
+              },
+              ".jq-selectbox:hover .jq-selectbox__trigger-arrow, .jq-number__spin.minus:hover:after, .jq-number__spin.plus:hover:after": {
+                "border-top-color": "@fieldColor",
+                "border-bottom-color": "@fieldColor"
+              },
+              ".jq-selectbox .jq-selectbox__trigger-arrow, .jq-number__spin.minus:after, .jq-number__spin.plus:after": {
+                "border-top-color": "@fieldHover",
+                "border-bottom-color": "@fieldHover"
+              }
+            },
+            ".form-check-input": {
+              "margin": "auto",
+              "margin-top": "8px"
+            },
+            "& when (@customStyle), (@disableElements)": {
+              "input::-webkit-clear-button": {
+                "display": "none"
+              },
+              "input::-webkit-inner-spin-button": {
+                "display": "none"
+              },
+              "input::-webkit-outer-spin-button": {
+                "display": "none"
+              },
+              "input::-webkit-calendar-picker-indicator": {
+                "display": "none"
+              }
+            },
+            "H3": {
+              "text-align": "center"
+            },
+            ".btn": {
               "&:hover": {
-                "&:after": {
-                  "width": "100%"
-                }
+                "animation-name": "hvr-wobble-vertical",
+                "animation-duration": "1s",
+                "animation-timing-function": "ease-in-out",
+                "animation-iteration-count": "1"
+              }
+            },
+            "@keyframes hvr-wobble-vertical": {
+              "16.65%": {
+                "transform": "translateY(8px)"
+              },
+              "33.3%": {
+                "transform": "translateY(-6px)"
+              },
+              "49.95%": {
+                "transform": "translateY(4px)"
+              },
+              "66.6%": {
+                "transform": "translateY(-2px)"
+              },
+              "83.25%": {
+                "transform": "translateY(1px)"
+              },
+              "to": {
+                "transform": "translateY(0)"
               }
             }
           },
-          "_name": "header1",
-          "_customHTML": "<section class=\"header1\" group=\"Headers\" plugins=\"amp-main\">\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"15\" step=\"1\" value=\"5\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"15\" step=\"1\" value=\"5\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubTitle\" checked>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" required>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background1.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\"></div>\n    <div mbr-class=\"{'container':!fullWidth,\n                     'container-fluid': fullWidth}\">\n        <div class=\"mbr-row\">\n            <div class=\"mbr-col-sm-12 mbr-col-md-12 mbr-col-lg-8\" mbr-if=\"showTitle\">\n                <h1 class=\"mbr-section-title align-left mbr-fonts-style mbr-semibold mbr-pb-4\" mbr-theme-style=\"display-1\" data-app-selector=\".mbr-section-title\">Cover Story: The Amazing Microblading App!</h1>\n            </div>\n        </div>\n\n        <div class=\"mbr-row mbr-jc-e\">\n            <div class=\"mbr-col-sm-12 mbr-col-md-12 mbr-col-lg-10\" mbr-if=\"showText\">\n                <p class=\"mbr-text align-left mbr-semibold mbr-fonts-style\" mbr-class=\"{'mbr-pt-2': showTitle || showSubtitle}\" mbr-theme-style=\"display-2\" mbr-if=\"showText\" data-app-selector=\".mbr-section-btn, .mbr-text\">Miami Beach Microblading's Ana Perrone was once again featured in the cover of another international magazine. Below you can read her article written for the 7th edition of PMU International Magazine.</p>\n            </div>\n        </div>\n\n        <div class=\"mbr-row row-2\">\n\n            <div class=\"mbr-col-sm-12 end mbr-col-md-12 mbr-col-lg-5\">\n                <h2 class=\"align-left mbr-fonts-style mbr-bold md-pb\" mbr-theme-style=\"display-5\" mbr-if=\"showSubTitle\">\n                    Featured in PMU International, July 2019</h2>\n            </div>\n\n            <div class=\"mbr-col-sm-12 mbr-col-md-12 mbr-col-lg-7\">\n                <div class=\"image-block\">\n                    <amp-img src=\"@PROJECT_PATH@/assets/images/ana-pmu-international-cover-956x1280.jpg\" layout=\"responsive\" width=\"528.040625\" height=\"707\" alt=\"image\" class=\"placeholder-loader\">\n                        <div placeholder class=\"placeholder\"></div>\n                        <a href=\"#\"><img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/ana-pmu-international-cover-956x1280.jpg\" alt title></a>\n                    </amp-img>\n                </div>\n            </div>\n\n\n        </div>\n    </div>\n</section>",
-          "_cid": "s7t6KaiFx1",
-          "_anchor": "header1-q",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "alias": false,
-          "_styles": {
-            "padding-top": "(@paddingTop * 1rem)",
-            "padding-bottom": "(@paddingBottom * 1rem)",
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)",
-              "& when (@overlay)": {
-                ".mbr-overlay": {
-                  "background": "@overlayColor",
-                  "opacity": "@overlayOpacity"
-                }
-              }
-            },
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
-            },
-            "H2": {
-              "color": "#ff5500"
-            }
-          },
-          "_name": "content2",
-          "_customHTML": "<section class=\"content2\" group=\"Content\" plugins=\"amp-main\">\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"15\" step=\"1\" value=\"5\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"15\" step=\"1\" value=\"5\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" required>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background1.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\"></div>\n    <div mbr-class=\"{'container':!fullWidth,\n                     'container-fluid': fullWidth}\">\n\n\n        <div class=\"mbr-row mbr-pb-5 mbr-jc-e\">\n            <div class=\"mbr-col-sm-12 mbr-col-md-12 mbr-col-lg-12\">\n                <h2 class=\"align-left mbr-pb-2 mbr-fonts-style mbr-bold md-pb\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\">by Ana Perrone International PMU Trainer &amp; Microblading Instructor at Swiss Color®Specialized in hair stroke technique and developer of the \"Microblading App\"PMU &amp; TechnologyGroundbreaking Microblading Appdeveloped by a PMU artist for PMU artists.<div><br></div><div><br></div></h2>\n                <p class=\"text align-left mbr-semibold mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".text\" mbr-if=\"showText\">My name is Ana Perrone, and I am the owner of the Miami Beach Microblading Medical Spa &amp; Swiss Color® Academy branch in Miami, FL, U.S.A.. And I’ve grown tired of spending money to print all my clients consent forms and files in paper form so I’ve decided to create an app to get rid of paper forms forever by having my clients fill out electronic forms, therefore also saving some valuable storage space inside my medspa. It seems like every month I was spending more and more money on printer ink and was running low in file storage space inside my mini office. Not many people realize but on a standard color jet printer one page is $0.30-$0.40 in ink cost! If you have a 10 page clients form (like i had) its $4 just to print blank form! I wanted to know how come nobody had invented a phone/tablet application for the client to simply fill out and sign electronic forms similar to what we already have in most doctors’ offices here in America. In the beginning the app was made just for my PMU and microblading business in Miami Beach.<br><br>But with time we developed and improved the app with the help of fellow artists and students. So we decided to make the app available for everyone on both iOS and Android platform for free. Not just an e-forms app, we also implanted an awesome design option for students and artists to practice microblading and PMU using any photograph with a rich set of tools like golden ratio caliper and color palette with 16 million colors. After that we also added a simple but effective scheduling feature for a single user and the “news” section which is where artists have a space to announce their newest contributions to our industry, being that machines, inks, courses, books, shared knowledges, blogs, art, etc. The “forms” tool has already preloaded templates such as medical history forms, consent to receive PMU treatment form, aftercare forms, photo-video release, etc, in 3 different languages (English, Portuguese and Spanish). After being filled out and signed by the client these forms are stored on the AWS (Amazon servers) cloud and encrypted, meaning; if the technician looses their phone or tablet, they can retrieve all their data with their login from any other new mobile device. A copy of the forms in pdf format are also emailed automatically to the artist and the artist can also email the filled form to anyone or print directly from the app. The template forms have a space for the artist to add pictures and notes to each client form after filled. So if the artist forgot to add a note to the client’s file, something like “client had very oily skin and bled a lot” or “I used pigment XYZ lot number 1234, exp 12/19 in this client with a 6 speed and a 3RL needle conf”, he can do so later. Besides from the preloaded templates, there is the option to create 100% customized forms in any language, so any artist in the world can use this app for their clients to fill out forms with the wording and language of their preference. It is the best part of the app because it helps artists and business save so much time and money. Imagine you are at home and your client calls complaining about something during healing time and you have no idea what pigment or tool you used or who this person is because the client files are in the office. This will never happen if you are using the Microblading Appbecause you can have access to the client’s files from anywhere from your mobile device (phone or tablet). The first 10 customer forms in the app are free, you have the option to buy additional forms packages or just purchase unlimited forms for only $9.99 per month. Unfortunately I have to charge for unlimited forms since I have to pay for storage fees to the secure first-class and reliable cloud hosting (Amazon). Although the app is very easy to use and can have the client's custom consent forms in any language, today the basic commands are in English: commands like \"save\" \"cancel\" \"yes\" \"add\" etc, but I uploaded 3 videos on youtube for my Brazilian students narrating step by step in Portuguese how to use the two most popular modalities of the application that are drawing (Projects) and client files and consent forms (Forms). All other great features in the app, such as “Projects” (drawing feature for tablets) “Scheduling” and “News”, are 100% free. In the Projects feature the student can practice eyebrow mapping, microblading and microshading simulation on any image by using all the amazing digital tools such as golden ratio caliper, outline pen, different microblades, over 100 different shades, eraser, layers, lines, etc, while the existing artist can create a simulated look of what their client would look like with a pair of new eyebrows that would suit better their client’s face. I myself, and a lot of artists I know who use the app, use this future for distance consultations: the client sends a hi-res selfie of frontal and profile face shots taken by another person and we measure and draw 3 different choices of eyebrows, take screen shots and send it back to the client to see which style they prefer. Of course it’s not 3D so it’s not 100% accurate but the client can have an idea of shape, color and width and usually end up booking the procedure, even if they are from out of the town, state or country. This part of the app helps us provide high tech top notch customer service even before the client visit. 21 century - age of distant consultation! The Schedulingfeature from the app is simple but very helpful for the individual artist. It’s a simple calendar where the technician populates the time and date and adds the client’s name and email to the desired appointment. The client will receive automatic email reminders of their appointments from the app. When you click on the News icon inside the Microblading APP you will find the most-up-to-date blogs, articles and offers from the industry leaders, whether they are machine and pigment manufacturers with special deal for their products, famous masters’ tips, free stuff and advice, interesting PMU inventions and discoveries, event promotions, special discount on classes and many more game changing information. Those vouchers and offers are exclusive, available in the app Newsfeature only.<br><br>Always Innovating<br><br>I’m excited to announce that new developments and improvements are coming in the near future for the app. We are currently working on adding more features to the application such as the option to use a chat inside the app and other marketing tools for artists. I believe that there is nothing that is 100% good, we always have room to improve our professional skills. I always study and constantly seek for new knowledge to share with students and colleagues. About the Author: Ana Luiza Perrone, or Ana Perrone, and is best known internationally as an instructor of Microblading and PMU trainer for Swiss Color® International and an artist formed by the Italian Biotek (Academia Toscana) and by Phibrows. Ana works within her medical spa in Miami Beach serving clients and giving private classes, classes for groups within her PMU school at Miami Beach in Florida, which is the only subsidiary of Swiss Color® in the United States and also travels to give workshops and presentations in other American and international cities. This year Ana will be a master speaker at the Global Permanent event in Sochi, Russia and at the World Wide Eyebrow Festival in Rotterdam. Ana also developed an online course to complete her classes live, the student first learns the whole theoretical part online with multiple choice tests to move from one level to the next, then comes to practice class and then must continue homework in the After completing all practical exercises, you will receive your final certificate of artist by post, so your course or workshop does not only last for a day or two, but weeks, sometimes months until the student is approved. all his practical exercises honoring the name of the school with excellence in his future works.</p>\n            </div>\n        </div>\n\n    </div>\n</section>",
-          "_cid": "s7t6NvxCmY",
+          "_name": "form1",
+          "_customHTML": "<section class=\"form\" group=\"Form\" plugins=\"amp-main, amp-form, amp-mustache\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <header>Style</header>\n        <input type=\"checkbox\" name=\"customStyle\" title=\"Custom Style\">\n        <input type=\"checkbox\" name=\"disableElements\" title=\"Disable Control\">\n        <input type=\"color\" name=\"fieldColor\" title=\"Field\" value=\"#ffffff\" condition=\"customStyle\">\n        <input type=\"color\" name=\"fieldHover\" title=\"Field Hover\" value=\"#efefef\" condition=\"customStyle\">\n        <input type=\"color\" name=\"borderColor\" title=\"Border\" value=\"#cccccc\" condition=\"customStyle\">\n        <input type=\"color\" name=\"borderHover\" title=\"Border Hover\" value=\"#000000\" condition=\"customStyle\">\n        <input type=\"color\" name=\"formText\" title=\"Text\" value=\"#000000\" condition=\"customStyle\">\n        <input type=\"color\" name=\"formPlaceholder\" title=\"Placeholders\" value=\"#c1c1c1\" condition=\"customStyle\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image\" value=\"../assets/background.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected=\"\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked=\"\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n        <input type=\"range\" inline=\"\" title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.4\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"(overlay &amp;&amp; bg.type=='image')\"></div>\n    <div class=\"container\">\n        <div class=\"row\">\n            <div mbr-form=\"\" class=\"mbr-col-lg-8 mbr-ml-auto mbr-mr-auto mbr-form\">\n                <!--Formbuilder Form-->\n                <form action=\"\" name=\"Form Name\" method=\"POST\" class=\"mbr-form\">\n                    <div class=\"mbr-row\">\n                        <div submit-success=\"\" class=\"mbr-col-lg-12 mbr-col-md-12 mbr-col-sm-12\">\n                            <template data-form-alert=\"\" type=\"amp-mustache\">Thanks for filling out the form!</template>\n                        </div>\n                        <div submit-error=\"\" class=\"mbr-col-lg-12 mbr-col-md-12 mbr-col-sm-12\">\n                            <template data-form-alert=\"\" type=\"amp-mustache\">Thanks for filling out the form!</template>\n                        </div>\n                    </div>\n                    <div class=\"dragArea mbr-row\">\n                        <div class=\"mbr-col-lg-12 mbr-col-md-12 mbr-col-sm-12\">\n                            <h3 mbr-theme-style=\"display-2\" class=\"mbr-fonts-style mbr-pb-2 mbr-fonts-style mbr-fonts-style\"><b>Contact Us</b></h3>\n                        </div>\n                        <div data-for=\"form[data][0][1]\" class=\"mbr-col-lg-6 mbr-col-md-12 mbr-col-sm-12 field\">\n                            <input type=\"hidden\" name=\"form[data][0][0]\" value=\"first-name\">\n                            <input type=\"text\" name=\"form[data][0][1]\" placeholder=\"First Name\" data-form-field=\"first-name\" mbr-theme-style=\"display-7\" class=\"field-input\" value=\"\">\n                        </div>\n                        <div data-for=\"form[data][1][1]\" class=\"mbr-col-lg-6 mbr-col-md-12 mbr-col-sm-12 field\">\n                            <input type=\"hidden\" name=\"form[data][1][0]\" value=\"last-mane\">\n                            <input type=\"text\" name=\"form[data][1][1]\" placeholder=\"Last Name\" data-form-field=\"last-mane\" mbr-theme-style=\"display-7\" class=\"field-input\" value=\"\">\n                        </div>\n                        <div data-for=\"form[data][2][1]\" class=\"mbr-col-lg-6 mbr-col-md-12 mbr-col-sm-12 field\">\n                            <input type=\"hidden\" name=\"form[data][2][0]\" value=\"email\">\n                            <input type=\"email\" name=\"form[data][2][1]\" placeholder=\"Email\" data-form-field=\"email\" mbr-theme-style=\"display-7\" class=\"field-input\" value=\"\">\n                        </div>\n                        <div class=\"mbr-col-lg-6 mbr-col-md-12 mbr-col-sm-12 field\" data-for=\"form[data][3][1]\">\n                            <input type=\"hidden\" name=\"form[data][3][0]\" value=\"phone\">\n                            <input type=\"tel\" name=\"form[data][3][1]\" placeholder=\"Phone\" pattern=\"[0-9]{3}-[0-9]{3}-[0-9]{4}\" data-form-field=\"phone\" mbr-theme-style=\"display-7\" class=\"field-input\" value=\"\">\n                        </div>\n                        <div class=\"mbr-col-lg-12 mbr-col-md-12 mbr-col-sm-12 field\" data-for=\"form[data][4][1]\">\n                            <input type=\"hidden\" name=\"form[data][4][0]\" value=\"message\">\n                            <textarea name=\"form[data][4][1]\" placeholder=\"Message\" data-form-field=\"message\" mbr-theme-style=\"display-7\" class=\"field-input\"></textarea>\n                        </div>\n                        <div mbr-buttons=\"true\" mbr-theme-style=\"display-7\" data-toolbar=\"-mbrBtnMove,-mbrLink,-mbrBtnRemove,-mbrBtnAdd\" class=\"mbr-col-auto mbr-m-auto\"><a type=\"submit\" class=\"btn btn-primary\" data-app-placeholder=\"Type Text\">Submit</a></div>\n                    </div>\n                </form>\n                <!--Formbuilder Form-->\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "s7t8LgIRSs",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
           "_params": {},
-          "_anchor": "content2-r"
+          "_anchor": "form1-t"
         }
       ]
     }
