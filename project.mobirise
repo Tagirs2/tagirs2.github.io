@@ -1301,9 +1301,9 @@
       "settings": {
         "title": "Booking",
         "order": 1,
-        "html_before": "",
+        "html_before": "<script type=\"text/javascript\" src=\"https://booksy.com/widget/code.js?id=404861&country=us&lang=en\"></script>",
         "footer_custom": "",
-        "header_custom": "<script type=\"text/javascript\" src=\"https://booksy.com/widget/code.js?id=404861&country=us&lang=en\"></script>"
+        "header_custom": ""
       },
       "components": [
         {
