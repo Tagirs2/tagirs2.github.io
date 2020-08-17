@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Expression Brow Microblading studio",
-    "currentPage": "Microblading.html",
+    "currentPage": "Gallery.html",
     "theme": {
       "name": "workshopamp",
       "title": "WorkshopAMP",
@@ -603,8 +603,8 @@
         "order": 1,
         "html_before": "",
         "footer_custom": "<script type=\"text/javascript\" src=\"https://booksy.com/widget/code.js?id=404861&country=us&lang=en\"></script>",
-        "header_custom": "Booking page of Expression Brow Studio - is the leading Miacroblading and permanent makeup salon in Port Saint Lucie and Fort Pierce area. Swiss Color International certified artist. Best before and after microblading results.",
-        "meta_descr": ""
+        "header_custom": "",
+        "meta_descr": "Booking page of Expression Brow Studio - is the leading Miacroblading and permanent makeup salon in Port Saint Lucie and Fort Pierce area. Swiss Color International certified artist. Best before and after microblading results."
       },
       "components": [
         {
@@ -716,7 +716,8 @@
       "settings": {
         "title": "Services",
         "order": 2,
-        "header_custom": "Services page of Expression Brow Studio - is the leading Miacroblading and permanent makeup salon in Port Saint Lucie and Fort Pierce area. Swiss Color International certified artist. Best before and after microblading results."
+        "header_custom": "",
+        "meta_descr": "Services page of Expression Brow Studio - is the leading Miacroblading and permanent makeup salon in Port Saint Lucie and Fort Pierce area. Swiss Color International certified artist. Best before and after microblading results."
       },
       "components": [
         {
@@ -1195,7 +1196,8 @@
       "settings": {
         "title": "Gallery",
         "order": 3,
-        "header_custom": "Image gallery page of Expression Brow Studio - is the leading Miacroblading and permanent makeup salon in Port Saint Lucie and Fort Pierce area. Swiss Color International certified artist. Best before and after microblading results."
+        "header_custom": "",
+        "meta_descr": "Image gallery page of Expression Brow Studio - is the leading Miacroblading and permanent makeup salon in Port Saint Lucie and Fort Pierce area. Swiss Color International certified artist. Best before and after microblading results."
       },
       "components": [
         {
