@@ -594,36 +594,6 @@
           "_global": false,
           "_once": false,
           "_params": {}
-        },
-        {
-          "alias": false,
-          "_styles": {
-            "padding-top": "(@paddingTop * 1rem)",
-            "padding-bottom": "(@paddingBottom * 1rem)",
-            "background-color": "@bg",
-            ".iconfont-wrapper": {
-              "margin-right": "(@iconsPadding * 1rem)",
-              "@media (max-width: 992px)": {
-                "margin-right": "0.5rem"
-              },
-              "height": "(@iconsSize * 1rem)",
-              "width": "(@iconsSize * 1rem)",
-              "display": "inline-block"
-            },
-            ".amp-iconfont": {
-              "font-size": "(@iconsSize * 1rem)",
-              "width": "(@iconsSize * 1rem)",
-              "color": "@primaryColor"
-            }
-          },
-          "_name": "contacts4",
-          "_customHTML": "<section class=\"social contacts4\" group=\"Social\" plugins=\"amp-main\">\n\t<mbr-parameters>\n\t<!-- Block parameters controls (Blue \"Gear\" panel) -->\n    <header>Size</header>\n\t<input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n\t<input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n\t<input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n\t<header>Title</header>\n\t<input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n\t<input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\">\n\t<select title=\"Align\" name=\"titleAlign\" condition=\"showTitle || showSubtitle\">\n\t\t<option value=\"1\">Left</option>\n\t\t<option value=\"2\" selected>Center</option>\n\t\t<option value=\"3\">Right</option>\n\t</select>\n\t<header>Icons</header>\n\t<input type=\"range\" inline title=\"Icons Size\" name=\"iconsSize\" min=\"1\" max=\"3\" step=\"0.25\" value=\"2.5\">\n\t<input type=\"range\" inline title=\"Icons Padding\" name=\"iconsPadding\" min=\"0.5\" max=\"3\" step=\"0.25\" value=\"2\">\n\t<select title=\"Position\" name=\"flexContent\">\n\t\t<option value=\"1\">Left</option>\n\t\t<option value=\"2\" selected>Center</option>\n\t\t<option value=\"3\">Right</option>\n\t</select>\n\t<input type=\"range\" inline title=\"Icons Count\" name=\"iconsCount\" min=\"1\" max=\"10\" value=\"2\" step=\"1\" required>\n    <header>Background</header>\n\t<input type=\"color\" title=\"Background Color\" name=\"bg\" value=\"#faf1ee\" required>\n\t</mbr-parameters>\n\t<div mbr-class=\"{'container': fullWidth,\n\t\t\t\t\t 'container-fluid': !fullWidth}\">\n\t\t<div class=\"title mbr-pb-4\" mbr-if=\"showTitle || showSubtitle\" mbr-class=\"{'align-center': titleAlign == 2,\n\t\t\t\t \t\t 'align-right': titleAlign == 3}\">\n\t\t\t<h3 class=\"mbr-section-title mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">Follow Us</h3>\n\t\t\t<h4 class=\"mbr-section-subtitle mbr-fonts-style mbr-pt-2\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">Enter your Social Icons subtitle here</h4>\n\t\t</div>\n\t\t<div class=\"icons-list mbr-flex flex-wrap\" mbr-list mbr-list-grow=\"iconsCount\" mbr-link-type=\"socials\" mbr-class=\"{'mbr-jc-c': flexContent == 2,\n\t\t\t\t\t\t 'mbr-jc-e': flexContent == 3}\">\n\t\t\t<a href=\"https://www.facebook.com/101603484722304\" class=\"iconfont-wrapper\">\n\t\t\t\t<span mbr-icon class=\"amp-iconfont animation-normal fa-facebook-official fa\"></span>\n\t\t\t</a>\n\t\t\t<a href=\"https://www.instagram.com/expression_brow_studio/\" target=\"_blank\" class=\"iconfont-wrapper\">\n\t\t\t\t<span mbr-icon class=\"amp-iconfont animation-normal fa-instagram fa\"></span>\n\t\t\t</a>\n\t\t\t\n\t\t\t\n\t\t\t\n\t\t\t\n\t\t\t\n\t\t</div>\n\t</div>\n</section>",
-          "_cid": "s7B6zY6VCi",
-          "_anchor": "contacts4-d",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
         }
       ]
     },
