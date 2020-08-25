@@ -31,7 +31,7 @@
     "path": "@PROJECT_PATH@",
     "versionFirst": "4.10.5",
     "siteFonts": [],
-    "uniqCompNum": 11,
+    "uniqCompNum": 12,
     "versionPublish": "4.10.5",
     "screenshot": "screenshot.png"
   },
@@ -116,85 +116,58 @@
             },
             "& when (@bg-type = 'image')": {
               "background-image": "url(@bg-value)",
-              "& when (@overlay)": {
-                ".mbr-overlay": {
-                  "background": "@overlayColor",
-                  "opacity": "@overlayOpacity"
-                }
+              ".mbr-overlay": {
+                "background-color": "@overlayColor",
+                "opacity": "@overlayOpacity"
               }
             },
-            ".contacts": {
-              "height": "100%"
-            },
-            ".contacts-block": {
-              "width": "100%",
-              "@media (max-width: 992px)": {
-                "text-align": "center"
-              }
-            },
-            ".iconfont-wrapper": {
-              "height": "(@iconsSize * 1rem)",
-              "width": "(@iconsSize * 1rem)",
-              "display": "inline-block"
-            },
-            ".amp-iconfont": {
-              "font-size": "(@iconsSize * 1rem)",
-              "width": "(@iconsSize * 1rem)",
-              "vertical-align": "middle"
-            },
-            ".first-element": {
-              "@media (max-width: 992px)": {
-                "padding-bottom": "2rem"
-              }
-            },
-            ".map-block": {
-              "width": "100%",
-              "@media (max-width: 992px)": {
-                "margin-bottom": "2rem"
+            ".card-wrapper": {
+              "& when not (@transparentBg)": {
+                "position": "relative"
               },
-              ".google-map, iframe, amp-iframe": {
-                "min-height": "(@mapHeight * 1px)",
-                "width": "100%"
-              }
-            },
-            "@media (min-width: 992px)": {
-              ".mbr-row": {
-                "margin-left": "-2rem",
-                "margin-right": "-2rem",
-                "> *": {
-                  "padding-left": "2rem",
-                  "padding-right": "2rem"
-                }
-              }
-            },
-            "@media (min-width: 991px)": {
-              ".left-elem": {
-                "padding-right": "0",
-                ".contacts-block": {
-                  "padding-right": "2rem"
-                }
+              "& when (@showBorders)": {
+                "border": "1px solid @bordersColor"
               },
-              ".right-elem": {
-                "padding-left": "0",
-                ".contacts-block": {
-                  "padding-left": "2rem"
-                }
+              "z-index": "1",
+              "@media (max-width: 991px)": {
+                "flex-wrap": "wrap"
               }
             },
-            "& when not (@contactsBg)": {
-              ".colored-bg": {
-                "background-color": "@contactsBgColor"
+            "& when not (@transparentBg)": {
+              ".card-wrapper:after": {
+                "content": "\"\"",
+                "position": "absolute",
+                "left": "0",
+                "right": "0",
+                "top": "0",
+                "bottom": "0",
+                "background-color": "@cardBg",
+                "opacity": "@bgOpacity",
+                "z-index": "-1"
+              }
+            },
+            ".card-box": {
+              "width": "100%"
+            },
+            ".number": {
+              "float": "left",
+              "margin-top": "25px",
+              "margin-right": "25px",
+              "color": "#efefef",
+              "& div": {
+                "font-size": "5rem",
+                "line-height": "7rem"
               }
             }
           },
-          "_name": "contacts1",
-          "_customHTML": "<section class=\"contacts1 map\" group=\"Contacts\" plugins=\"amp-main, amp-iframe\">\n\t<mbr-parameters>\n\t<!-- Block parameters controls (Blue \"Gear\" panel) -->\n\t<header>Size</header>\n\t<input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n\t<input type=\"checkbox\" title=\"Reverse Content\" name=\"reverseContent\" condition=\"showCardTitle || showAddress || showPhone || showEmail || showSocial\" checked required>\n\t<input type=\"range\" inline title=\"Content Width\" name=\"blockWidth\" min=\"1\" max=\"3\" step=\"1\" value=\"2\" required>\n\t<input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n\t<input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n\t<header>Title</header>\n\t<input type=\"checkbox\" title=\"Title\" name=\"showTitle\">\n\t<input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n\t<select title=\"Align\" name=\"titleAlign\" condition=\"showTitle || showSubtitle\">\n\t\t<option value=\"1\" selected>Left</option>\n\t\t<option value=\"2\">Center</option>\n\t\t<option value=\"3\">Right</option>\n\t</select>\n\t<header>Contacts</header>\n\t<input type=\"checkbox\" title=\"Title\" name=\"showCardTitle\" checked>\n\t<input type=\"checkbox\" name=\"showAddress\" title=\"Address\" checked>\n\t<input type=\"checkbox\" name=\"showPhone\" title=\"Phone\" checked>\n\t<input type=\"checkbox\" name=\"showEmail\" title=\"E-mail\" checked>\n\t<input type=\"checkbox\" name=\"contactsBg\" title=\"Transparent Bg\">\n\t<input type=\"color\" name=\"contactsBgColor\" title=\"Background Color\" value=\"#000\" condition=\"!contactsBg\">\n\t<select title=\"Align\" name=\"cardAlign\" condition=\"showCardTitle || showAddress || showPhone || showEmail || showSocial\">\n\t\t<option value=\"1\" selected>Left</option>\n\t\t<option value=\"2\">Center</option>\n\t\t<option value=\"3\">Right</option>\n\t</select>\n\t<header>Icons</header>\n\t<input type=\"checkbox\" title=\"Show Social\" name=\"showSocial\" checked>\n\t<input type=\"range\" inline title=\"Count\" name=\"socialCount\" min=\"1\" max=\"10\" value=\"4\" step=\"1\" condition=\"showSocial\">\n\t<input type=\"range\" inline title=\"Size\" name=\"iconsSize\" min=\"1\" max=\"4\" step=\"0.1\" value=\"2\" condition=\"showSocial\">\n<header>Map</header>\n<input type=\"range\" inline title=\"Height\" name=\"mapHeight\" min=\"400\" max=\"1200\" step=\"50\" value=\"850\">\n<input type=\"map\" title=\"Map\" name=\"googleMap\" required=\"\" place-id=\"iframe\" value=\"<iframe style=&quot;width: 1200px;height: 600px;border: none&quot; src=&quot;https://api.botssup.com/local-context.html&quot;></iframe>\">\n<header>Background</header>\n<fieldset type=\"background\" name=\"bg\" required>\n\t<input type=\"image\" title=\"Background Image\" value=\"../_images/background4.jpg\">\n\t<input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n</fieldset>\n<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#efefef\" condition=\"overlay && bg.type == 'image'\">\n<input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type == 'image'\">\n</mbr-parameters>\n<!-- Block parameters controls (Blue \"Gear\" panel) -->\n<div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\"></div>\n<div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n\t<div class=\"title mbr-pb-4\" mbr-if=\"showTitle||showSubtitle\" mbr-class=\"{'align-center':titleAlign==2,\n\t\t\t\t\t 'align-right':titleAlign==3}\">\n\t\t<h3 class=\"mbr-section-title mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">Contacts with Map</h3>\n\t\t<h4 class=\"mbr-section-subtitle mbr-fonts-style mbr-pt-2\" mbr-theme-style=\"display-7\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">Enter your block subtitle here</h4>\n\t</div>\n\t<div class=\"mbr-row main-row mbr-jc-c\" mbr-class=\"{'mbr-row-reverse':reverseContent}\">\n\t\t<div class=\"mbr-col-md-12 mbr-col-sm-12 mbr-flex\" mbr-class=\"{'mbr-col-lg-6': blockWidth==2,\n\t\t\t\t\t\t 'mbr-col-lg-4': blockWidth==1,\n\t\t\t\t\t\t 'mbr-col-lg-8': blockWidth==3,\n\t\t\t\t\t\t 'right-elem':reverseContent,\n\t\t\t\t\t \t 'left-elem':!reverseContent}\" mbr-if=\"showCardTitle || showAddress || showPhone || showEmail || showSocial\">\n\t\t\t<div class=\"first-element contacts-block mbr-flex mbr-jc-c mbr-column\" mbr-class=\"{'align-center':cardAlign==2,\n\t\t\t\t\t\t\t 'align-right':cardAlign==3,\n\t\t\t\t\t\t\t 'colored-bg':!contactsBg}\">\n\t\t\t\t<h4 class=\"contacts-title mbr-bold mbr-fonts-style mbr-white mbr-pt-2\" mbr-if=\"showCardTitle\" mbr-theme-style=\"display-5\" data-app-selector=\".contacts-title\">United States</h4>\n\t\t\t\t<div class=\"contacts-box mbr-pt-3 mbr-white\" mbr-if=\"showAddress || showPhone || showEmail || showSocial\">\n\t\t\t\t\t<p class=\"mbr-text contacts-text mbr-fonts-style\" mbr-if=\"showAddress\" mbr-theme-style=\"display-7\" data-app-selector=\".contacts-text, .icons-list\"><b>Address:</b> <span mbr-link-type=\"address\">10 Street, Los Angeles, CA, 93050</span></p>\n\t\t\t\t\t<p class=\"mbr-text contacts-text mbr-fonts-style mbr-pt-2\" mbr-if=\"showPhone\" mbr-theme-style=\"display-7\" data-app-selector=\".contacts-text, .icons-list\"><b>Phone:</b> <span mbr-link-type=\"phone\">1.555.234.4567</span></p>\n\t\t\t\t\t<p class=\"mbr-text contacts-text mbr-fonts-style mbr-pt-2\" mbr-class=\"{'mbr-pb-2':showSocial}\" mbr-if=\"showEmail\" mbr-theme-style=\"display-7\" data-app-selector=\".contacts-text, .icons-list\"><b>E-mail:</b> <span mbr-link-type=\"email\">example@mail.com</span></p>\n\t\t\t\t\t<div class=\"icons-list social mbr-pt-4\" mbr-if=\"showSocial\" mbr-list mbr-list-grow=\"socialCount\" mbr-link-type=\"socials\">\n\t\t\t\t\t\t<a href=\"https://mobirise.com\" target=\"_blank\" class=\"iconfont-wrapper\">\n\t\t\t\t\t\t\t<span mbr-icon class=\"amp-iconfont fa-youtube-square fa\"></span>\n\t\t\t\t\t\t</a>\n\t\t\t\t\t\t<a href=\"https://mobirise.com\" target=\"_blank\" class=\"iconfont-wrapper\">\n\t\t\t\t\t\t\t<span mbr-icon class=\"amp-iconfont fa-facebook-square fa\"></span>\n\t\t\t\t\t\t</a>\n\t\t\t\t\t\t<a href=\"https://mobirise.com\" target=\"_blank\" class=\"iconfont-wrapper\">\n\t\t\t\t\t\t\t<span mbr-icon class=\"amp-iconfont fa-google-plus-square fa\"></span>\n\t\t\t\t\t\t</a>\n\t\t\t\t\t\t<a href=\"https://mobirise.com\" target=\"_blank\" class=\"iconfont-wrapper\">\n\t\t\t\t\t\t\t<span mbr-icon class=\"amp-iconfont fa-twitter-square fa\"></span>\n\t\t\t\t\t\t</a>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"map-block mbr-col-md-12 mbr-col-sm-12 mbr-jc-c mbr-flex mbr-m-auto mbr-column\" mbr-class=\"{'mbr-col-lg-6':blockWidth==2,\n\t\t\t\t\t\t'mbr-col-lg-8':blockWidth==1,\n\t\t\t\t\t\t'mbr-col-lg-4':blockWidth==3,\n\t\t\t\t\t\t'left-elem':reverseContent,\n\t\t\t\t\t \t'right-elem':!reverseContent}\">\n\t\t\t<div class=\"google-map\" mbr-map=\"googleMap\"></div>\n\t\t\t<div class=\"map-placeholder mobirise-loader\">\n\t\t\t\t<div placeholder class=\"placeholder\"></div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>\n</section>",
-          "_cid": "s8mT8Ylsjk",
-          "_anchor": "contacts1-0",
+          "_name": "features1",
+          "_customHTML": "<section class=\"features1\" group=\"Features\" plugins=\"amp-main\">\n    <mbr-parameters>\n    <header>Size</header>\n    <input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n    <header>Title</header>\n    <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked=\"\">\n    <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked=\"\">\n    <select title=\"Align\" name=\"titleAlign\" condition=\"showTitle || showSubtitle\">\n        <option value=\"1\" selected=\"\">Left</option>\n        <option value=\"2\">Center</option>\n        <option value=\"3\">Right</option>\n    </select>\n    <header>Cards</header>\n    <input type=\"range\" inline=\"\" title=\"Cards Count\" name=\"cardsCount\" min=\"1\" max=\"4\" step=\"1\" value=\"4\" condition=\"showCardsTitle || showCardsText || checkText\" required=\"\">\n    <select title=\"Align\" name=\"cardsAlign\" condition=\"showCardsTitle || showCardsText || checkText\">\n        <option value=\"1\" selected=\"\">Left</option>\n        <option value=\"2\">Center</option>\n        <option value=\"3\">Right</option>\n    </select>\n    <!-- -->   \n    <input type=\"checkbox\" title=\"Show Title\" name=\"showCardsTitle\" checked=\"\">\n    <input type=\"checkbox\" title=\"Show Text\" name=\"showCardsText\" checked=\"\">\n    <!--  -->\n    <input type=\"checkbox\" title=\"Borders\" name=\"showBorders\" condition=\"showCardsTitle || showCardsText || checkText\">\n    <input type=\"color\" title=\"Color\" name=\"bordersColor\" value=\"#cccccc\" condition=\"showBorders &amp;&amp; (showCardsTitle || showCardsText || checkText)\">\n    <input type=\"checkbox\" title=\"Transparent BG\" name=\"transparentBg\" checked=\"\" condition=\"showCardsTitle || showCardsText || checkText\">\n    <input type=\"range\" title=\"Opacity\" name=\"bgOpacity\" min=\"0\" max=\"1\" value=\"1\" step=\"0.1\" condition=\"!transparentBg\">\n    <input type=\"color\" title=\"Card Bg Color\" name=\"cardBg\" value=\"#767676\" condition=\"!transparentBg &amp;&amp; (showCardsTitle || showCardsText || checkText)\">\n    <!--  -->\n    <input type=\"checkbox\" title=\"Big Text\" name=\"checkText\" checked=\"\">\n    <!--  -->\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" required=\"\">\n        <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected=\"\">\n        <input type=\"image\" title=\"Background Image\" value=\"../_images/background3.jpg\">\n    </fieldset>\n    <!--  -->\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked=\"\" condition=\"bg.type !== 'color'\">\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#efefef\" condition=\"overlay &amp;&amp; bg.type == 'image'\">\n    <input type=\"range\" inline=\"\" title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay &amp;&amp; bg.type == 'image'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay &amp;&amp; bg.type !== 'color'\"></div>\n    <div mbr-class=\"{'container':!fullWidth,\n                     'container-fluid':fullWidth}\">\n        <div class=\"title mbr-pb-4\" mbr-if=\"showTitle || showSubtitle\" mbr-class=\"{'align-center': titleAlign == 2,\n                         'align-right': titleAlign == 3}\">\n                <h4 class=\"mbr-section-subtitle mbr-bold mbr-pb-1 text-primary mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">For love and passion</h4>         \n                <h3 class=\"mbr-section-title mbr-bolder mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">REASONS TO WORK WITH US</h3>                \n        </div>\n        <div class=\"mbr-row mbr-jc-c\" mbr-if=\"showCardsTitle || showCardsText || checkText\">\n            <div class=\"card mbr-col-sm-12 mbr-col-md-12 mbr-col-lg-6 mbr-pb-4\" mbr-class=\"{'align-center': cardsAlign == 2,\n                             'align-right': cardsAlign == 3,\n                             'md-pb': cardsCount > 2,\n                             'last-child': cardsCount == 1}\">\n                <div class=\"card-wrapper mbr-flex\" mbr-class=\"{'mbr-column': checkText,\n                                 'mbr-p-4': showBorders || !transparentBg}\">\n                    <div class=\"card-box\" mbr-if=\"(showCardsTitle || showCardsText)\">\n                        <div class=\"number\" mbr-if=\"checkText\">\n                            <div mbr-text=\"\" class=\"image-text mbr-fonts-style mbr-bolder\" mbr-theme-style=\"display-1\" data-app-selector=\".image-text\">01</div>\n                        </div>                         \n                        <h3 class=\"card-title mbr-bolder mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showCardsTitle\" data-app-selector=\".card-title, .card-btn, .card-img\">Expertise with development</h3>\n                        <p class=\"card-text mbr-fonts-style mbr-pt-2\" mbr-theme-style=\"display-7\" mbr-if=\"showCardsText\" data-app-selector=\".card-text, .card-btn, .card-img\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis dolor nunc.</p>\n                    </div>\n                </div>\n            </div>\n            <div class=\"card mbr-col-sm-12 mbr-col-md-12 mbr-col-lg-6 mbr-pb-4\" mbr-class=\"{'align-center': cardsAlign == 2,\n                             'align-right': cardsAlign == 3,\n                             'md-pb': cardsCount > 2,\n                             'last-child': cardsCount == 2}\" mbr-if=\"cardsCount > 1\">\n                <div class=\"card-wrapper mbr-flex\" mbr-class=\"{'mbr-column': checkText, \n                                 'mbr-p-4': showBorders || !transparentBg}\">\n                    <div class=\"card-box\" mbr-if=\"(showCardsTitle || showCardsText)\">\n                        <div class=\"number\" mbr-if=\"checkText\">\n                            <div mbr-text=\"\" class=\"image-text mbr-fonts-style mbr-bolder\" mbr-theme-style=\"display-1\" data-app-selector=\".image-text\">02</div>\n                        </div>                         \n                        <h3 class=\"card-title mbr-bolder mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showCardsTitle\" data-app-selector=\".card-title, .card-btn, .card-img\">Enjoy passion &amp; make money</h3>\n                        <p class=\"card-text mbr-fonts-style mbr-pt-2\" mbr-theme-style=\"display-7\" mbr-if=\"showCardsText\" data-app-selector=\".card-text, .card-btn, .card-img\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis dolor nunc.</p>\n                    </div>\n                </div>\n            </div>\n            <div class=\"card mbr-col-sm-12 mbr-col-md-12 mbr-col-lg-6 mbr-pb-4\" mbr-class=\"{'align-center': cardsAlign == 2,\n                             'align-right': cardsAlign == 3,\n                             'last-child': cardsCount == 3}\" mbr-if=\"cardsCount > 2\">\n                <div class=\"card-wrapper mbr-flex\" mbr-class=\"{'mbr-column': checkText,\n                                 'mbr-p-4': showBorders || !transparentBg}\">                    \n                    <div class=\"card-box\" mbr-if=\"(showCardsTitle || showCardsText)\">\n                        <div class=\"number\" mbr-if=\"checkText\">\n                            <div mbr-text=\"\" class=\"image-text mbr-fonts-style mbr-bolder\" mbr-theme-style=\"display-1\" data-app-selector=\".image-text\">03</div>\n                        </div>                         \n                        <h3 class=\"card-title mbr-bolder mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showCardsTitle\" data-app-selector=\".card-title, .card-btn, .card-img\">Have fun at work</h3>\n                        <p class=\"card-text mbr-fonts-style mbr-pt-2\" mbr-theme-style=\"display-7\" mbr-if=\"showCardsText\" data-app-selector=\".card-text, .card-btn, .card-img\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis dolor nunc.</p>\n                    </div>\n                </div>\n            </div>\n            <div class=\"card mbr-col-sm-12 mbr-col-md-12 mbr-col-lg-6 mbr-pb-4\" mbr-class=\"{'align-center': cardsAlign == 2,\n                             'align-right': cardsAlign == 3,\n                             'last-child': cardsCount == 4}\" mbr-if=\"cardsCount > 3\">\n                <div class=\"card-wrapper mbr-flex\" mbr-class=\"{'mbr-column': checkText,\n                                 'mbr-p-4': showBorders || !transparentBg}\">\n                    <div class=\"card-box\" mbr-if=\"(showCardsTitle || showCardsText)\">\n                        <div class=\"number\" mbr-if=\"checkText\">\n                            <div mbr-text=\"\" class=\"image-text mbr-fonts-style mbr-bolder\" mbr-theme-style=\"display-1\" data-app-selector=\".image-text\">04</div>\n                        </div>                         \n                        <h3 class=\"card-title mbr-bolder mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showCardsTitle\" data-app-selector=\".card-title, .card-btn, .card-img\">Benefits for your own vehicle</h3>\n                        <p class=\"card-text mbr-fonts-style mbr-pt-2\" mbr-theme-style=\"display-7\" mbr-if=\"showCardsText\" data-app-selector=\".card-text, .card-btn, .card-img\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis dolor nunc.</p>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "s8InQpmsgQ",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {}
+          "_params": {},
+          "_anchor": "features1-b"
         },
         {
           "alias": false,
@@ -226,96 +199,6 @@
           "_customHTML": "<section class=\"contacts6 map\" group=\"Contacts\" plugins=\"amp-main, amp-iframe\">\n    <mbr-parameters>\n    <!--  -->\n    <header>Size</header>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"4\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"4\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n    <!--  -->\n    <header>Title</header>\n    <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\">\n    <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\">\n    <select title=\"Align\" name=\"titleAlign\" condition=\"showTitle || showSubtitle\">\n        <option value=\"1\">Left</option>\n        <option value=\"2\" selected>Center</option>\n        <option value=\"3\">Right</option>\n    </select>\n    <!--  -->\n    <header>Map</header>\n    <input type=\"range\" inline title=\"Map Height\" name=\"mapHeight\" min=\"400\" max=\"1200\" step=\"50\" value=\"1000\">\n    <input type=\"map\" title=\"Map\" name=\"googleMap\" required=\"\" place-id=\"iframe\" value=\"<iframe style=&quot;width: 600px;height: 450px;border: none&quot; src=&quot;https://api.botssup.com/local-context.html&quot;></iframe>\">\n    <!--  -->\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" required>\n        <input type=\"color\" title=\"Background Color\" value=\"#494848\" selected>\n        <input type=\"image\" title=\"Background Image\" value=\"../_images/background3.jpg\">\n    </fieldset>\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#efefef\" condition=\"overlay && bg.type == 'image'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type == 'image'\">\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\"></div>\n    <div mbr-class=\"{'container':!fullWidth,\n                     'container-fluid':fullWidth}\">\n        <div class=\"title mbr-pb-4\" mbr-if=\"showTitle || showSubtitle\" mbr-class=\"{'align-center': titleAlign == 2,\n                         'align-right': titleAlign == 3}\">\n            <h3 class=\"mbr-section-title mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">Map Block</h3>\n            <h4 class=\"mbr-section-subtitle mbr-fonts-style mbr-pt-2\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">Enter your block subtitle here</h4>\n        </div>\n        <div class=\"map-block mbr-col-md-12 mbr-jc-c mbr-flex mbr-m-auto mbr-column\" mbr-class=\"{'mbr-col-lg-6':blockWidth==2,\n                         'mbr-col-lg-8':blockWidth==1,\n                         'mbr-col-lg-4':blockWidth==3}\">\n            <div class=\"google-map\" mbr-map=\"googleMap\"></div>\n            <div class=\"map-placeholder mobirise-loader\">\n                <div placeholder class=\"placeholder\"></div>\n            </div>\n        </div>\n    </div>\n</section>",
           "_cid": "s8mT9Obkoq",
           "_anchor": "contacts3-1",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "alias": false,
-          "_styles": {
-            "padding-top": "(@paddingTop * 1rem)",
-            "padding-bottom": "(@paddingBottom * 1rem)",
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
-            },
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)",
-              "& when (@overlay)": {
-                ".mbr-overlay": {
-                  "background": "@overlayColor",
-                  "opacity": "@overlayOpacity"
-                }
-              }
-            },
-            ".contacts": {
-              "height": "100%"
-            },
-            ".contacts-block": {
-              "width": "100%",
-              "@media (max-width: 992px)": {
-                "text-align": "center"
-              }
-            },
-            ".iconfont-wrapper": {
-              "height": "(@iconsSize * 1rem)",
-              "width": "(@iconsSize * 1rem)",
-              "display": "inline-block"
-            },
-            ".amp-iconfont": {
-              "font-size": "(@iconsSize * 1rem)",
-              "width": "(@iconsSize * 1rem)",
-              "vertical-align": "middle"
-            },
-            ".first-element": {
-              "@media (max-width: 992px)": {
-                "padding-bottom": "2rem"
-              }
-            },
-            ".map-block": {
-              "width": "100%",
-              "@media (max-width: 992px)": {
-                "margin-bottom": "2rem"
-              },
-              ".google-map, iframe, amp-iframe": {
-                "min-height": "(@mapHeight * 1px)",
-                "width": "100%"
-              }
-            },
-            "@media (min-width: 992px)": {
-              ".mbr-row": {
-                "margin-left": "-2rem",
-                "margin-right": "-2rem",
-                "> *": {
-                  "padding-left": "2rem",
-                  "padding-right": "2rem"
-                }
-              }
-            },
-            "@media (min-width: 991px)": {
-              ".left-elem": {
-                "padding-right": "0",
-                ".contacts-block": {
-                  "padding-right": "2rem"
-                }
-              },
-              ".right-elem": {
-                "padding-left": "0",
-                ".contacts-block": {
-                  "padding-left": "2rem"
-                }
-              }
-            },
-            "& when not (@contactsBg)": {
-              ".colored-bg": {
-                "background-color": "@contactsBgColor"
-              }
-            }
-          },
-          "_name": "contacts1",
-          "_customHTML": "<section class=\"contacts1 map\" group=\"Contacts\" plugins=\"amp-main, amp-iframe\">\n\t<mbr-parameters>\n\t<!-- Block parameters controls (Blue \"Gear\" panel) -->\n\t<header>Size</header>\n\t<input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n\t<input type=\"checkbox\" title=\"Reverse Content\" name=\"reverseContent\" condition=\"showCardTitle || showAddress || showPhone || showEmail || showSocial\" checked required>\n\t<input type=\"range\" inline title=\"Content Width\" name=\"blockWidth\" min=\"1\" max=\"3\" step=\"1\" value=\"2\" required>\n\t<input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n\t<input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n\t<header>Title</header>\n\t<input type=\"checkbox\" title=\"Title\" name=\"showTitle\">\n\t<input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n\t<select title=\"Align\" name=\"titleAlign\" condition=\"showTitle || showSubtitle\">\n\t\t<option value=\"1\" selected>Left</option>\n\t\t<option value=\"2\">Center</option>\n\t\t<option value=\"3\">Right</option>\n\t</select>\n\t<header>Contacts</header>\n\t<input type=\"checkbox\" title=\"Title\" name=\"showCardTitle\" checked>\n\t<input type=\"checkbox\" name=\"showAddress\" title=\"Address\" checked>\n\t<input type=\"checkbox\" name=\"showPhone\" title=\"Phone\" checked>\n\t<input type=\"checkbox\" name=\"showEmail\" title=\"E-mail\" checked>\n\t<input type=\"checkbox\" name=\"contactsBg\" title=\"Transparent Bg\">\n\t<input type=\"color\" name=\"contactsBgColor\" title=\"Background Color\" value=\"#000\" condition=\"!contactsBg\">\n\t<select title=\"Align\" name=\"cardAlign\" condition=\"showCardTitle || showAddress || showPhone || showEmail || showSocial\">\n\t\t<option value=\"1\" selected>Left</option>\n\t\t<option value=\"2\">Center</option>\n\t\t<option value=\"3\">Right</option>\n\t</select>\n\t<header>Icons</header>\n\t<input type=\"checkbox\" title=\"Show Social\" name=\"showSocial\" checked>\n\t<input type=\"range\" inline title=\"Count\" name=\"socialCount\" min=\"1\" max=\"10\" value=\"4\" step=\"1\" condition=\"showSocial\">\n\t<input type=\"range\" inline title=\"Size\" name=\"iconsSize\" min=\"1\" max=\"4\" step=\"0.1\" value=\"2\" condition=\"showSocial\">\n<header>Map</header>\n<input type=\"range\" inline title=\"Height\" name=\"mapHeight\" min=\"400\" max=\"1200\" step=\"50\" value=\"400\">\n<input type=\"map\" title=\"Map\" name=\"googleMap\" required=\"\" place-id=\"iframe\" value=\"<iframe style=&quot;width: 600px;height: 450px;border: none&quot; src=&quot;https://api.botssup.com/local-context.html&quot;></iframe>\">\n<header>Background</header>\n<fieldset type=\"background\" name=\"bg\" required>\n\t<input type=\"image\" title=\"Background Image\" value=\"../_images/background4.jpg\">\n\t<input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n</fieldset>\n<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#efefef\" condition=\"overlay && bg.type == 'image'\">\n<input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type == 'image'\">\n</mbr-parameters>\n<!-- Block parameters controls (Blue \"Gear\" panel) -->\n<div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\"></div>\n<div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n\t<div class=\"title mbr-pb-4\" mbr-if=\"showTitle||showSubtitle\" mbr-class=\"{'align-center':titleAlign==2,\n\t\t\t\t\t 'align-right':titleAlign==3}\">\n\t\t<h3 class=\"mbr-section-title mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">Contacts with Map</h3>\n\t\t<h4 class=\"mbr-section-subtitle mbr-fonts-style mbr-pt-2\" mbr-theme-style=\"display-7\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">Enter your block subtitle here</h4>\n\t</div>\n\t<div class=\"mbr-row main-row mbr-jc-c\" mbr-class=\"{'mbr-row-reverse':reverseContent}\">\n\t\t<div class=\"mbr-col-md-12 mbr-col-sm-12 mbr-flex\" mbr-class=\"{'mbr-col-lg-6': blockWidth==2,\n\t\t\t\t\t\t 'mbr-col-lg-4': blockWidth==1,\n\t\t\t\t\t\t 'mbr-col-lg-8': blockWidth==3,\n\t\t\t\t\t\t 'right-elem':reverseContent,\n\t\t\t\t\t \t 'left-elem':!reverseContent}\" mbr-if=\"showCardTitle || showAddress || showPhone || showEmail || showSocial\">\n\t\t\t<div class=\"first-element contacts-block mbr-flex mbr-jc-c mbr-column\" mbr-class=\"{'align-center':cardAlign==2,\n\t\t\t\t\t\t\t 'align-right':cardAlign==3,\n\t\t\t\t\t\t\t 'colored-bg':!contactsBg}\">\n\t\t\t\t<h4 class=\"contacts-title mbr-bold mbr-fonts-style mbr-white mbr-pt-2\" mbr-if=\"showCardTitle\" mbr-theme-style=\"display-5\" data-app-selector=\".contacts-title\">United States</h4>\n\t\t\t\t<div class=\"contacts-box mbr-pt-3 mbr-white\" mbr-if=\"showAddress || showPhone || showEmail || showSocial\">\n\t\t\t\t\t<p class=\"mbr-text contacts-text mbr-fonts-style\" mbr-if=\"showAddress\" mbr-theme-style=\"display-7\" data-app-selector=\".contacts-text, .icons-list\"><b>Address:</b> <span mbr-link-type=\"address\">10 Street, Los Angeles, CA, 93050</span></p>\n\t\t\t\t\t<p class=\"mbr-text contacts-text mbr-fonts-style mbr-pt-2\" mbr-if=\"showPhone\" mbr-theme-style=\"display-7\" data-app-selector=\".contacts-text, .icons-list\"><b>Phone:</b> <span mbr-link-type=\"phone\">1.555.234.4567</span></p>\n\t\t\t\t\t<p class=\"mbr-text contacts-text mbr-fonts-style mbr-pt-2\" mbr-class=\"{'mbr-pb-2':showSocial}\" mbr-if=\"showEmail\" mbr-theme-style=\"display-7\" data-app-selector=\".contacts-text, .icons-list\"><b>E-mail:</b> <span mbr-link-type=\"email\">example@mail.com</span></p>\n\t\t\t\t\t<div class=\"icons-list social mbr-pt-4\" mbr-if=\"showSocial\" mbr-list mbr-list-grow=\"socialCount\" mbr-link-type=\"socials\">\n\t\t\t\t\t\t<a href=\"https://mobirise.com\" target=\"_blank\" class=\"iconfont-wrapper\">\n\t\t\t\t\t\t\t<span mbr-icon class=\"amp-iconfont fa-youtube-square fa\"></span>\n\t\t\t\t\t\t</a>\n\t\t\t\t\t\t<a href=\"https://mobirise.com\" target=\"_blank\" class=\"iconfont-wrapper\">\n\t\t\t\t\t\t\t<span mbr-icon class=\"amp-iconfont fa-facebook-square fa\"></span>\n\t\t\t\t\t\t</a>\n\t\t\t\t\t\t<a href=\"https://mobirise.com\" target=\"_blank\" class=\"iconfont-wrapper\">\n\t\t\t\t\t\t\t<span mbr-icon class=\"amp-iconfont fa-google-plus-square fa\"></span>\n\t\t\t\t\t\t</a>\n\t\t\t\t\t\t<a href=\"https://mobirise.com\" target=\"_blank\" class=\"iconfont-wrapper\">\n\t\t\t\t\t\t\t<span mbr-icon class=\"amp-iconfont fa-twitter-square fa\"></span>\n\t\t\t\t\t\t</a>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"map-block mbr-col-md-12 mbr-col-sm-12 mbr-jc-c mbr-flex mbr-m-auto mbr-column\" mbr-class=\"{'mbr-col-lg-6':blockWidth==2,\n\t\t\t\t\t\t'mbr-col-lg-8':blockWidth==1,\n\t\t\t\t\t\t'mbr-col-lg-4':blockWidth==3,\n\t\t\t\t\t\t'left-elem':reverseContent,\n\t\t\t\t\t \t'right-elem':!reverseContent}\">\n\t\t\t<div class=\"google-map\" mbr-map=\"googleMap\"></div>\n\t\t\t<div class=\"map-placeholder mobirise-loader\">\n\t\t\t\t<div placeholder class=\"placeholder\"></div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>\n</section>",
-          "_cid": "s8mTxJ6PiD",
-          "_anchor": "contacts1-3",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
