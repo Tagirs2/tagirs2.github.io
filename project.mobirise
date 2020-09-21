@@ -44,7 +44,7 @@
         "title": "Home",
         "meta_descr": "",
         "header_custom": "",
-        "footer_custom": "",
+        "footer_custom": "<div id=\"container_0_34036517274245814\"></div><script defer src=\"https://widget.botzzup.com/botzzup.js?r=0.7844078195766817\"></script><script>document.addEventListener('DOMContentLoaded', () => { Botzzup.init('#container_0_34036517274245814', '85f6BtSFR1XH8txHzvGWgsuAjIRp9QyXcwBhvCI9gEEBeMdCb3hXoY78VZ6j'); });</script>",
         "html_before": ""
       },
       "components": [
