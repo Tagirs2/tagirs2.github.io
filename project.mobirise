@@ -31,7 +31,7 @@
     "path": "@PROJECT_PATH@",
     "versionFirst": "4.10.5",
     "siteFonts": [],
-    "uniqCompNum": 10,
+    "uniqCompNum": 11,
     "versionPublish": "4.10.5"
   },
   "pages": {
@@ -40,9 +40,9 @@
         "main": true,
         "title": "Home",
         "meta_descr": "",
-        "header_custom": "<div id=\"container_0_020987278168064782\"></div><script defer src=\"https://widget.botzzup.com/botzzup.js?r=0.09542503794607538\"></script><script>document.addEventListener('DOMContentLoaded', () => { Botzzup.init('#container_0_020987278168064782', 'FsBD1zD6sjvWq5bgE8kk8CFX57FccrzARBqOvvuKycDSPn7bmxvs1qhBEFH5'); });</script>",
+        "header_custom": "",
         "footer_custom": "",
-        "html_before": ""
+        "html_before": "<div id=\"container_0_9467953580517184\"></div><script defer src=\"https://widget.botzzup.com/botzzup.js?r=0.2747342565742016\"></script><script>document.addEventListener('DOMContentLoaded', () => { Botzzup.init('#container_0_9467953580517184', 'FsBD1zD6sjvWq5bgE8kk8CFX57FccrzARBqOvvuKycDSPn7bmxvs1qhBEFH5'); });</script>"
       },
       "components": [
         {
