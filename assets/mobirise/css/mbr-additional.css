@@ -622,9 +622,9 @@ blockquote {
 }
 .cid-sd7XcWozAv {
   overflow: hidden;
-  padding-top: 75px;
+  padding-top: 0px;
   padding-bottom: 75px;
-  background-color: #191f2d;
+  background-color: #0e566e;
 }
 .cid-sd7XcWozAv section {
   padding-bottom: 0 !important;
@@ -707,7 +707,7 @@ blockquote {
 .cid-sd7XcWozAv .shape {
   width: 223px;
   height: 245px;
-  border: 4px solid #fb7522;
+  border: 4px solid #ffffff;
   color: #ffffff;
   display: block;
   position: absolute;
@@ -772,7 +772,7 @@ blockquote {
 }
 .cid-sd7XcWozAv a {
   display: inline-block;
-  color: #fb7522;
+  color: #ffffff;
   line-height: 1;
   text-decoration: none;
   cursor: pointer;
