@@ -15,9 +15,9 @@
         "mainFont": "Kulim Park",
         "display1Font": "Oranienbaum",
         "display1Size": 8.6,
-        "display2Font": "Oranienbaum",
+        "display2Font": "Crimson Text",
         "display2Size": 4,
-        "display5Font": "Crimson Text",
+        "display5Font": "Source Serif Pro",
         "display5Size": 2,
         "display7Font": "Kulim Park",
         "display7Size": 1.2,
@@ -45,6 +45,11 @@
         "css": "'Crimson Text', serif",
         "name": "Crimson Text",
         "url": "https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600,600i,700,700i"
+      },
+      {
+        "css": "'Source Serif Pro', serif",
+        "name": "Source Serif Pro",
+        "url": "https://fonts.googleapis.com/css?family=Source+Serif+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i"
       }
     ],
     "uniqCompNum": 19,
