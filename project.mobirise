@@ -63,7 +63,7 @@
         "main": true,
         "title": "Home",
         "meta_descr": "",
-        "header_custom": "<div id=\"review-list-0104109729149091\" class=\"review-theme-white\"></div>\n<script src=\"https://widget.botssup.com/review-new.js?r=0.6951400506280095\"></script>\n<script>ReviewNew.init('#review-list-0104109729149091', 'PobZdd9i')</script>",
+        "header_custom": "",
         "footer_custom": "<div id=\"container_0_4248907069796062\"></div><script defer src=\"https://widget.botssup.com/botzzup.js?r=0.7732905921468726\"></script><script>document.addEventListener('DOMContentLoaded', () => { Botzzup.init('#container_0_4248907069796062', 'DrezKPFH5FmtlPLbPqcxwvUcdVGnCqduUSUHR1cC3oYAZj5pBLkOWhjJ5rZT'); });</script>",
         "html_before": ""
       },
