@@ -1,6 +1,6 @@
 {
   "settings": {
-    "currentPage": "microbladingbooking.html",
+    "currentPage": "index.html",
     "theme": {
       "name": "productamp",
       "title": "ProductAMP",
@@ -80,7 +80,7 @@
         "title": "Home",
         "meta_descr": "",
         "header_custom": "",
-        "footer_custom": "",
+        "footer_custom": "<div id=\"review-list-023631676320560058\" class=\"review-theme-dark\"></div>\n<script src=\"https://widget.botzzup.com/review-new.js?r=0.20464820173076825\"></script>\n<script>ReviewNew.init('#review-list-023631676320560058', 'p5RrmW3d')</script>",
         "html_before": ""
       },
       "components": [
