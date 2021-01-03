@@ -1,6 +1,6 @@
 {
   "settings": {
-    "currentPage": "page8.html",
+    "currentPage": "microbladingbooking.html",
     "theme": {
       "name": "productamp",
       "title": "ProductAMP",
@@ -59,7 +59,7 @@
       }
     ],
     "imageResize": true,
-    "publishChangesOnly": true,
+    "publishChangesOnly": false,
     "chatbutton": {},
     "favicon": "@PROJECT_PATH@/assets/images/img-5234.webp",
     "robotsSwitcher": false,
@@ -4153,12 +4153,13 @@
         }
       ]
     },
-    "page8.html": {
+    "microbladingbooking.html": {
       "settings": {
         "title": "Booking",
         "order": 1,
         "footer_custom": "",
-        "header_custom": "<!-- Start Square Appointments Embed Code --><script src='https://square.site/appointments/buyer/widget/2izy0hv4fsqlar/Z6C7N1RJPDKDJ.js'></script><!-- End Square Appointments EmbedCode -->"
+        "header_custom": "",
+        "html_before": "<!-- Start Square Appointments Embed Code --><script src='https://square.site/appointments/buyer/widget/2izy0hv4fsqlar/Z6C7N1RJPDKDJ.js'></script><!-- End Square Appointments EmbedCode -->"
       },
       "components": [
         {
