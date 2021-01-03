@@ -92,7 +92,7 @@
     "imageResize": true,
     "publishChangesOnly": false,
     "chatbutton": {
-      "phone": "+13059657320",
+      "phone": "+13054144145",
       "message": "",
       "size": "65px",
       "backgroundColor": "#e5ddd5",
@@ -118,7 +118,8 @@
     "versionPublish": "5.2.0",
     "screenshot": "screenshot.png",
     "cssOptimize": true,
-    "robotsText": "User-agent: *\r\nDisallow: /cgi-bin\r\n"
+    "robotsText": "User-agent: *\r\nDisallow: /cgi-bin\r\n",
+    "canonical-url": false
   },
   "pages": {
     "index.html": {
