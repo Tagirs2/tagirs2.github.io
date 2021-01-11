@@ -50,7 +50,7 @@
     "siteUrl": false,
     "cookiesAlert": false,
     "gdpr": false,
-    "uniqCompNum": 0,
+    "uniqCompNum": 1,
     "versionPublish": "5.2.0"
   },
   "pages": {
@@ -216,6 +216,57 @@
         {
           "alias": false,
           "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 10px)",
+              "padding-bottom": "(@paddingBottom * 10px)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)",
+              ".mbr-overlay": {
+                "background-color": "@overlayColor",
+                "opacity": "@overlayOpacity"
+              }
+            },
+            ".mbr-section-subtitle": {
+              "margin-bottom": "5px",
+              "margin-top": "50px"
+            },
+            ".mbr-text": {
+              "margin-top": "10px",
+              "margin-bottom": "30px"
+            },
+            ".btn:hover": {
+              "transform": "scale(0.9)"
+            },
+            ".btn-primary:hover": {
+              "color": "#fff !important",
+              "border-color": "#fff !important"
+            },
+            ".content": {
+              "padding": "20px"
+            },
+            "@media (max-width: 768px)": {
+              ".btn": {
+                "margin-bottom": "15px"
+              }
+            }
+          },
+          "_name": "header2",
+          "_sourceTheme": "courseamp",
+          "_customHTML": "<section class=\"header2\" group=\"Headers\" plugins=\"amp-main\" mbr-class=\"{'mbr-fullscreen': fullScreen}\">\n\t<mbr-parameters>\n\t\t<!-- Block parameters controls (Blue \"Gear\" panel) -->\n\t\t<input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked=\"\">\n\t\t<!--  -->\n\t\t<input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n\t\t<input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline=\"\" title=\"WidthText\" name=\"WidthText\" min=\"1\" max=\"3\" step=\"1\" value=\"2\">\n\t\t<!--  -->\n\t\t<input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked=\"\">\n\t\t<input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked=\"\">\n\t\t<input type=\"checkbox\" title=\"Show Button\" name=\"showButtons\" checked=\"\">\n        <select title=\"Align\" name=\"titleAlign\" condition=\"showTitle || showText || showButtons\">\n        <option value=\"1\" selected=\"\">Left</option>\n        <option value=\"2\">Center</option>\n        <option value=\"3\">Right</option>\n    </select>\n\t\t<!--  -->\n\t\t<fieldset type=\"background\" name=\"bg\">\n\t\t\t<input type=\"image\" title=\"Background Image\" value=\"../_images/bg2.jpg\" selected=\"\">\n\t\t\t<input type=\"color\" title=\"Background Color\" value=\"#e5e5e5\">\n\t\t</fieldset>\n\t\t<!--  -->\n\t\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type!='color'\">\n\t\t<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"bg.type!='color' &amp;&amp; overlay\">\n\t\t<input type=\"range\" inline=\"\" title=\"Overlay Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"bg.type!='color' &amp;&amp; overlay\">\n\t\t<!-- End block parameters -->\n\t</mbr-parameters>\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay &amp;&amp; bg.type !== 'color'\"></div>\n\t<div class=\"container mbr-col-sm-12\"><div class=\"mbr-row\" mbr-class=\"{'mbr-jc-c': titleAlign == 2, 'mbr-jc-e': titleAlign==3}\">\n\t\t<div class=\"mbr-black  content\" mbr-class=\"{'mbr-col-lg-6 mbr-col-md-12': WidthText == 2, 'mbr-col-lg-4 mbr-col-md-6': WidthText == 1, 'mbr-col-lg-8 mbr-col-md-6': WidthText == 3 }\">\n\t\t<h1 class=\"mbr-section-subtitle mbr-fonts-style mbr-white\" mbr-class=\"{'mbr-pb-4' : !showText}\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-section-subtitle\" mbr-if=\"showTitle\">\n\t\t\tHI, I AM EMILY JONES</h1>\n\t\t<p class=\"mbr-fonts-style mbr-text mbr-white\" mbr-theme-style=\"display-2\" data-app-selector=\".mbr-text, .mbr-section-btn\" mbr-if=\"showText\">\n\t\t\tA <b>positive outlook</b> on life and <b>self-confidence</b>\n\n\t\t</p>\n\t\t<div class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons=\"\" mbr-theme-style=\"display-4\"><a class=\"btn btn-lg btn-primary \" href=\"https://mobirise.com\" data-app-placeholder=\"Type Text\">\n\t\t\tDOWNLOAD FREE E-BOOK</a></div>\n\t    </div>\n\t</div>\n        </div>\n</section>",
+          "_cid": "slOMrBeYty",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "header2-0"
+        },
+        {
+          "alias": false,
+          "_styles": {
             "padding-top": "(@paddingTop * 10px)",
             "padding-bottom": "(@paddingBottom * 10px)",
             "background-color": "@bg",
@@ -272,7 +323,7 @@
             }
           },
           "_name": "header1",
-          "_customHTML": "<section class=\"header1\" group=\"Headers\" plugins=\"amp-main\">\n\n\t<mbr-parameters>\n\t\t<!-- Block parameters controls (Blue \"Gear\" panel) -->\n\t\t<input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked=\"\">\n\t\t<input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"15\" step=\"1\" value=\"0\">\n\t\t<input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"15\" step=\"1\" value=\"0\">\n        <input type=\"checkbox\" title=\"Media Left/Right\" name=\"reverseContent\" checked=\"\">\n\t\t<header>Show/Hide</header>\n\t\t<input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked=\"\">\n\t\t<input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubTitle\" checked=\"\">\n\t\t<input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked=\"\">\n\t\t<input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\" checked=\"\">\n\t\t<header>Background</header>\n        \t<input type=\"color\" value=\"#f9f9f9\" title=\"Background\" name=\"bg\" checked=\"\">\n\t\t<!-- End block parameters -->\n\t</mbr-parameters>\n\n\n\t<div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n\t\t<div class=\"mbr-row\" mbr-class=\"{\n                     'mbr-row-reverse': reverseContent}\">\n\t\t\t<div class=\" mbr-col-lg-6 mbr-col-md-12 mbr-col-sm-12 content\">\n\t\t\t\t<h5 class=\"mbr-section-subtitle mbr-fonts-style mbr-secondary mbr-regular\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-section-subtitle\" mbr-if=\"showSubTitle\">THE BEST LEARNING UNIVERSITY</h5>\n\t\t\t\t<h1 class=\"mbr-section-title mbr-fonts-style mbr-regular\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\"><b>Welcome To Our University</b></h1>\n\t\t\t\t<p class=\"mbr-text mbr-fonts-style mbr-regular\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">\n\t\t\t\t\tLorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae nihil magnam obcaecati eaque id sint minima rerum quidem quisquam ea ullam quaerat, amet eos consequuntur. Eum molestiae impedit, sint fugiat esse ducimus placeat alias ratione soluta rem porro dolores, qui tempore molestias aliquam nesciunt quod quae. Ab impedit, voluptates reiciendis. Aliquam maiores molestias magnam voluptate voluptas fugiat, accusamus harum facere?</p>\n\t\t\t\t<p class=\"mbr-text mbr-fonts-style mbr-regular\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">\n\t\t\t\t\tLorem ipsum dolor sit amet, consectetur adipisicing elit. Qui nobis autem rerum ab consectetur quo, perspiciatis voluptatibus enim deleniti, quae. Magnam quidem perferendis animi nobis quaerat repellat voluptatem veniam quam voluptates ducimus, facere libero vel, obcaecati odio sed. Sequi, vero!</p>\n\t\t\t\t<div class=\"mbr-section-btn mbr-col-lg-12 mbr-col-sm-12 mbr-col-md-12\" mbr-buttons=\"\" mbr-theme-style=\"display-4\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" data-app-selector=\".mbr-section-btn\"><a class=\"btn btn-lg btn-primary\" href=\"#\" data-app-placeholder=\"Type Text\">READ MORE</a></div>\n          \n\n\t\t\t</div>\n\n\t\t\t      \n<div class=\"mbr-col-lg-6 mbr-col-md-12 mbr-col-sm-12 image__block\">\n\t\t\t\t    <amp-img src=\"@PROJECT_PATH@/assets/images/img1-1200x800.jpg\" alt=\"image\" height=\"824.75\" width=\"1237.125\" layout=\"responsive\" class=\"mobirise-loader\">\n                        <div placeholder=\"\" class=\"placeholder\"></div>\n                        <img src=\"@PROJECT_PATH@/assets/images/img1-1200x800.jpg\" class=\"mbr-temp\" alt=\"\" title=\"\">\n                    </amp-img>\n\t\t\t    </div>\n\t\t</div>\n                        \n\t</div>\n\n</section>",
+          "_customHTML": "<section class=\"header1\" group=\"Headers\" plugins=\"amp-main\">\n\n\t<mbr-parameters>\n\t\t<!-- Block parameters controls (Blue \"Gear\" panel) -->\n\t\t<input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n\t\t<input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"15\" step=\"1\" value=\"0\">\n\t\t<input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"15\" step=\"1\" value=\"0\">\n        <input type=\"checkbox\" title=\"Media Left/Right\" name=\"reverseContent\">\n\t\t<header>Show/Hide</header>\n\t\t<input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubTitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n\t\t<input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\" checked>\n\t\t<header>Background</header>\n        \t<input type=\"color\" value=\"#f9f9f9\" title=\"Background\" name=\"bg\" checked>\n\t\t<!-- End block parameters -->\n\t</mbr-parameters>\n\n\n\t<div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n\t\t<div class=\"mbr-row\" mbr-class=\"{\n                     'mbr-row-reverse': reverseContent}\">\n\t\t\t<div class=\" mbr-col-lg-6 mbr-col-md-12 mbr-col-sm-12 content\">\n\t\t\t\t<h5 class=\"mbr-section-subtitle mbr-fonts-style mbr-secondary mbr-regular\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-section-subtitle\" mbr-if=\"showSubTitle\">THE BEST LEARNING UNIVERSITY</h5>\n\t\t\t\t<h1 class=\"mbr-section-title mbr-fonts-style mbr-regular\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\"><b>Welcome To Our University</b></h1>\n\t\t\t\t<p class=\"mbr-text mbr-fonts-style mbr-regular\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">\n\t\t\t\t\tLorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae nihil magnam obcaecati eaque id sint minima rerum quidem quisquam ea ullam quaerat, amet eos consequuntur. Eum molestiae impedit, sint fugiat esse ducimus placeat alias ratione soluta rem porro dolores, qui tempore molestias aliquam nesciunt quod quae. Ab impedit, voluptates reiciendis. Aliquam maiores molestias magnam voluptate voluptas fugiat, accusamus harum facere?</p>\n\t\t\t\t<p class=\"mbr-text mbr-fonts-style mbr-regular\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">\n\t\t\t\t\tLorem ipsum dolor sit amet, consectetur adipisicing elit. Qui nobis autem rerum ab consectetur quo, perspiciatis voluptatibus enim deleniti, quae. Magnam quidem perferendis animi nobis quaerat repellat voluptatem veniam quam voluptates ducimus, facere libero vel, obcaecati odio sed. Sequi, vero!</p>\n\t\t\t\t<div class=\"mbr-section-btn mbr-col-lg-12 mbr-col-sm-12 mbr-col-md-12\" mbr-buttons mbr-theme-style=\"display-4\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" data-app-selector=\".mbr-section-btn\"><a class=\"btn btn-lg btn-primary\" href=\"#\" data-app-placeholder=\"Type Text\">READ MORE</a></div>\n          \n\n\t\t\t</div>\n\n\t\t\t      \n<div class=\"mbr-col-lg-6 mbr-col-md-12 mbr-col-sm-12 image__block\">\n\t\t\t\t    <amp-img src=\"@PROJECT_PATH@/assets/images/img1-1200x800.jpg\" alt=\"image\" height=\"824.75\" width=\"1237.125\" layout=\"responsive\" class=\"mobirise-loader\">\n                        <div placeholder class=\"placeholder\"></div>\n                        <img src=\"@PROJECT_PATH@/assets/images/img1-1200x800.jpg\" class=\"mbr-temp\" alt title>\n                    </amp-img>\n\t\t\t    </div>\n\t\t</div>\n                        \n\t</div>\n\n</section>",
           "_cid": "rEXgkjNR4C",
           "_anchor": "header1-1",
           "_PHPplaceholders": [],
