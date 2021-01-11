@@ -106,7 +106,7 @@
     "chatbutton": {},
     "global_header_custom": "",
     "canonical-url": false,
-    "global_footer_custom": "<div id=\"container_0_5011017511856357\"></div><script defer src=\"https://widget.botzzup.com/botzzup.js?r=0.2647138430503846\"></script><script>document.addEventListener('DOMContentLoaded', () => { Botzzup.init('#container_0_5011017511856357', 'cLe8wBo8JlYdoQsJk0RCl1LsglNwY5S9WCkcArVQvRxUQc51O39R0xtehkgq'); });</script>"
+    "global_footer_custom": ""
   },
   "pages": {
     "index.html": {
@@ -115,7 +115,7 @@
         "title": "Home",
         "meta_descr": "",
         "header_custom": "",
-        "footer_custom": "",
+        "footer_custom": "<div id=\"container_0_5011017511856357\"></div><script defer src=\"https://widget.botzzup.com/botzzup.js?r=0.2647138430503846\"></script><script>document.addEventListener('DOMContentLoaded', () => { Botzzup.init('#container_0_5011017511856357', 'cLe8wBo8JlYdoQsJk0RCl1LsglNwY5S9WCkcArVQvRxUQc51O39R0xtehkgq'); });</script>",
         "html_before": ""
       },
       "components": [
